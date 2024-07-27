@@ -1,0 +1,10 @@
+{
+    "git.enableCommitSigning": false,
+    "git.verboseCommit": true,
+    "git.timeline.showUncommitted": true,
+    "git.branchProtection": [
+        "main"
+    ],
+    "git.inputValidation": true,
+    "git.pullBeforeCheckout": true
+}
