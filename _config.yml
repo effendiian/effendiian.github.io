@@ -93,13 +93,16 @@ include:
 exclude:
 ignore:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-
-# Themes
-## Themes: https://hexo.io/themes/
-# theme: landscape
-theme: cactus
+# Sitemap
+sitemap:
+  path:
+    - sitemap.xml
+    - sitemap.txt
+  template: ./source/_data/sitemap_template.xml
+  template_txt: ./source/_data/sitemap_template.xml
+  rel: false
+  tags: true
+  categories: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -107,6 +110,14 @@ deploy:
   type: 'git'
   repo: https://github.com/effendiian/effendiian.github.io
   branch: main
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+
+# Themes
+## Themes: https://hexo.io/themes/
+# theme: landscape
+theme: cactus
 
 # Theme Configuration
 theme_config:
@@ -119,8 +130,8 @@ theme_config:
     about: /about/
     projects: https://github.com/effendiian
     articles: /archives/
-    tags: /tags/
-    categories: /categories/
+    Tags: /tags/
+    Categories: /categories/
     search: /search/
 
   # Social Media
