@@ -29,7 +29,8 @@
 				"christian-kohler.npm-intellisense",
 				"christian-kohler.path-intellisense",
 				"vivaxy.vscode-conventional-commits",
-				"pshaddel.conventional-branch"
+				"pshaddel.conventional-branch",
+				"mhutchie.git-graph"
 			]
 		}
 	}
