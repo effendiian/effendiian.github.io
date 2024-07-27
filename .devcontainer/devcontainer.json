@@ -5,19 +5,14 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
-		"ghcr.io/devcontainers/features/github-cli:1": {
-			"installDirectlyFromGitHubRelease": true,
-			"version": "latest"
-		},
-		"ghcr.io/devcontainers/features/node:1": {
-			"nodeGypDependencies": true,
-			"installYarnUsingApt": true,
-			"version": "latest",
-			"nvmVersion": "latest"
-		},
-		"ghcr.io/devcontainers-contrib/features/jshint:2": {
-			"version": "latest"
-		}
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers-contrib/features/jshint:2": {},
+		"ghcr.io/devcontainers-contrib/features/exa:1": {},
+		"ghcr.io/devcontainers-contrib/features/micro:1": {},
+		"ghcr.io/eliises/devcontainer-features/bash-profile:1": {},
+		"ghcr.io/jasonthedeveloper/features/sbom:1": {},
+		"ghcr.io/devcontainers-contrib/features/npm-package:1": {}
 	},
 	"customizations": {
 		"vscode": {
@@ -30,7 +25,8 @@
 				"christian-kohler.path-intellisense",
 				"vivaxy.vscode-conventional-commits",
 				"pshaddel.conventional-branch",
-				"mhutchie.git-graph"
+				"mhutchie.git-graph",
+				"GitHub.vscode-pull-request-github"
 			]
 		}
 	}
