@@ -7,15 +7,30 @@
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers-contrib/features/jshint:2": {},
 		"ghcr.io/devcontainers-contrib/features/exa:1": {},
 		"ghcr.io/devcontainers-contrib/features/micro:1": {},
-		"ghcr.io/eliises/devcontainer-features/bash-profile:1": {},
-		"ghcr.io/jasonthedeveloper/features/sbom:1": {},
-		"ghcr.io/devcontainers-contrib/features/npm-package:1": {}
+		"ghcr.io/devcontainers-contrib/features/curl-apt-get:1": {},
+		"ghcr.io/devcontainers-contrib/features/wget-apt-get:1": {},
+		"ghcr.io/devcontainers-contrib/features/npm-package:1": {
+			"package": "hexo-cli",
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/http-server:1": {},
+		"ghcr.io/devcontainers-contrib/features/lighthouse-cli:1": {},
+		"ghcr.io/devcontainers-contrib/features/jshint:2": {},
+		"ghcr.io/jasonthedeveloper/features/sbom:1": {}
 	},
+	"mounts": [
+		{ "source": "${localWorkspaceFolder}/.devcontainer/home/vscode/.bash_profile", "target": "/home/vscode/.bash_profile", "type": "bind" }
+	],
 	"customizations": {
 		"vscode": {
+			"settings": {
+				"terminal.integrated.commandsToSkipShell": [
+					"workbench.action.toggleSidebarVisibility",
+					"-workbench.action.quickOpenView"
+				]
+			},
 			"extensions": [
 				"codezombiech.gitignore",
 				"ms-azuretools.vscode-docker",
