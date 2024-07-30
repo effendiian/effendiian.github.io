@@ -23,7 +23,7 @@
     "hexo-generator-tag": "^2.0.0",
     "hexo-global-license": "^0.5.5",
     "hexo-pagination": "^4.0.0",
-    "hexo-pdf": "^1.0.0",
+    "hexo-pdf": "github:uisneach/hexo-pdf",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^6.3.0",
     "hexo-renderer-stylus": "^3.0.1",
