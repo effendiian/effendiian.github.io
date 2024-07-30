@@ -10,5 +10,14 @@
     "terminal.integrated.commandsToSkipShell": [
         "workbench.action.toggleSidebarVisibility",
         "-workbench.action.quickOpenView"
+    ],
+    "conventionalCommits.scopes": [
+        "config",
+        "layout",
+        "theme",
+        "docs",
+        "ui",
+        "hexo",
+        "node"
     ]
 }
