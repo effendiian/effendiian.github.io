@@ -28,19 +28,8 @@ rendering engine work).
 
 {% pdf /assets/docs/20240726.resume--effendi-ian.pdf %}
 
-### Want to get in touch? 
+### Want to get in touch? ###
 
 [Reach out to me on LinkedIn](https://www.linkedin.com/in/effendiian/), or use the form below.
 
-<div id="contact">
-    <div class="contact-form">
-    <iframe 
-        src="https://docs.google.com/forms/d/e/1FAIpQLSeHGdothCLtGVbD-iWilaCehtRv5CzSxkUy3sa7dVUhpFLdqQ/viewform?embedded=true" 
-        width="600" 
-        height="1145" 
-        frameborder="0" 
-        marginheight="0"
-        marginwidth="0"
-    >Loading…</iframe>
-    </div>
-</dib>
+{% contact_form "1FAIpQLSeHGdothCLtGVbD-iWilaCehtRv5CzSxkUy3sa7dVUhpFLdqQ" %}

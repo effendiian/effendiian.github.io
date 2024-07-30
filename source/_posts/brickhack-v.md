@@ -13,7 +13,7 @@ tags:
 photos:
 - /assets/images/posts/brickhack-v/brickhackv.png
 project:
-  title: "BrickHack V"
+  title: "BrickHack V: Mood Swing"
   url: "https://devpost.com/software/brickhack-v-chefbicc"
   img: 
     src: "/assets/images/posts/brickhack-v/brickhackv.png"
