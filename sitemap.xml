@@ -4,7 +4,16 @@
   <url>
     <loc>http://effendiian.github.io/about/index.html</loc>
     
-    <lastmod>2024-07-27</lastmod>
+    <lastmod>2024-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/projects/index.html</loc>
+    
+    <lastmod>2024-07-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +58,7 @@
 
   <url>
     <loc>http://effendiian.github.io/</loc>
-    <lastmod>2024-07-27</lastmod>
+    <lastmod>2024-07-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
