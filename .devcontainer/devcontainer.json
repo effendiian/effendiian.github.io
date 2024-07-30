@@ -39,7 +39,8 @@
 				"stkb.rewrap",
 				"DigitalBrainstem.javascript-ejs-support",
 				"tomoki1207.pdf",
-				"DavidAnson.vscode-markdownlint"
+				"DavidAnson.vscode-markdownlint",
+				"j69.ejs-beautify"
 			]
 		}
 	}
