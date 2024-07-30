@@ -1,5 +1,6 @@
 ---
-title: 'Sugarlabs Activity: Team Proposal'
+title: 'Sugarlabs: Team Proposal for Baggage Claim Activity'
+date: 2019-04-02 01:52:05
 tags:
   - open-source
   - class
@@ -8,12 +9,14 @@ tags:
   - analysis
   - Sugarlabs
 categories:
-  - - blog
-    - hfoss
-date: 2019-04-2 01:52:05
+  - [blog, hfoss]
+photos:
+- /assets/images/projects/sugarlabs_preview.png
 project:
   title: "SugarLabs: Baggage Claim"
   url: "https://github.com/effendiian/hfoss-final-2019"
+  img:
+    src: "/assets/images/projects/sugarlabs_preview.png"
 ---
 
 # Sugarlabs Activity - Team Proposal #
