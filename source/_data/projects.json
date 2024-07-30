@@ -1,0 +1,11 @@
+{
+    "blog": {
+        "name": "Portfolio & Blog",
+        "description": "Created with Hexo.",
+        "url": "effendiian.github.io",
+        "img": {
+            "src": "/images/projects/blog_cover.png",
+            "alt": "Personal blog."
+        }
+    }
+}
