@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Why Build Local?Although it would be nice to advocate and support local businesses, this is decidedly not about that kind of local infrastructure. Instead, I’ll walk you through my experience building">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Triage - Installing Free Code Camp Locally">
+<meta property="og:url" content="http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/index.html">
+<meta property="og:site_name" content="@effendiian">
+<meta property="og:description" content="Why Build Local?Although it would be nice to advocate and support local businesses, this is decidedly not about that kind of local infrastructure. Instead, I’ll walk you through my experience building">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://effendiian.github.io/assets/images/posts/bugfix/fcc_banner.png">
+<meta property="article:published_time" content="2019-04-08T20:35:14.000Z">
+<meta property="article:modified_time" content="2024-07-30T12:09:05.580Z">
+<meta property="article:author" content="Ian Effendi">
+<meta property="article:tag" content="open-source">
+<meta property="article:tag" content="bugfix">
+<meta property="article:tag" content="education">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="triage">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://effendiian.github.io/assets/images/posts/bugfix/fcc_banner.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Triage - Installing Free Code Camp Locally</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<!--  -->
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2019/04/09/bugfix-fcc-35751/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2019/04/07/bugfix-fcc-35791/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&text=Triage - Installing Free Code Camp Locally"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&is_video=false&description=Triage - Installing Free Code Camp Locally"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Triage - Installing Free Code Camp Locally&body=Check out this article: http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&name=Triage - Installing Free Code Camp Locally&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&t=Triage - Installing Free Code Camp Locally"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Build-Local"><span class="toc-number">1.</span> <span class="toc-text">Why Build Local?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Setting-Up-the-Local-Environment"><span class="toc-number">1.1.</span> <span class="toc-text">Setting Up the Local Environment</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Forking-the-Repository"><span class="toc-number">1.1.1.</span> <span class="toc-text">Forking the Repository</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Preparing-the-Development-Environment"><span class="toc-number">1.1.2.</span> <span class="toc-text">Preparing the Development Environment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cloning-a-copy-of-freeCodeCamp"><span class="toc-number">1.1.3.</span> <span class="toc-text">Cloning a copy of freeCodeCamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Building-the-local-copy"><span class="toc-number">1.1.4.</span> <span class="toc-text">Building the local copy</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Installing-dependencies"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">Installing dependencies</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Node-js-npm"><span class="toc-number">1.1.4.1.1.</span> <span class="toc-text">Node.js &amp; npm</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MongoDB-Community-Edition"><span class="toc-number">1.1.4.1.2.</span> <span class="toc-text">MongoDB Community Edition</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configure-Dependencies"><span class="toc-number">1.1.4.2.</span> <span class="toc-text">Configure Dependencies</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Troubleshooting-Installation"><span class="toc-number">1.1.4.2.1.</span> <span class="toc-text">Troubleshooting Installation</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Running-Local"><span class="toc-number">1.1.5.</span> <span class="toc-text">Running Local</span></a></li></ol></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Triage - Installing Free Code Camp Locally
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Ian Effendi</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-04-08T20:35:14.000Z" class="dt-published" itemprop="datePublished">2019-04-08</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/hfoss/">hfoss</a> › <a class="category-link" href="/categories/freeCodeCamp/">freeCodeCamp</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/bugfix/" rel="tag">bugfix</a>, <a class="p-category" href="/tags/docker/" rel="tag">docker</a>, <a class="p-category" href="/tags/education/" rel="tag">education</a>, <a class="p-category" href="/tags/open-source/" rel="tag">open-source</a>, <a class="p-category" href="/tags/triage/" rel="tag">triage</a>
+    </div>
+
+
+      <span itemprop="license"></span>
+    </div>
+  </header>
+  
+<div class="article-gallery">
+    
+    <a class="gallery-item" href="/assets/images/posts/bugfix/fcc_banner.png" rel="gallery_clz8dpr31001z0rexawd20cfm">
+        <img src="/assets/images/posts/bugfix/fcc_banner.png" itemprop="image" />
+    </a>
+    
+</div>
+
+
+  <div class="content e-content" itemprop="articleBody">
+    <h1 id="Why-Build-Local"><a href="#Why-Build-Local" class="headerlink" title="Why Build Local?"></a>Why Build Local?</h1><p>Although it would be nice to advocate and support local businesses, this is decidedly not about that kind of local infrastructure. Instead, I’ll walk you through my experience building Free Code Camp for my local, Windows 10 Home environment - because when you don’t have Windows 10 Professional, you don’t have Hyper V and Windows wants you to suffer.</p>
+<p>I could have taken the easy route and spun up a virtual machine that supported their Docker installation. But that’s the <em>easy</em> route. I wanted to know the nitty gritty and wanted a taste at the underbelly that made this project work.</p>
+<p>Recently, I worked on two bugfixes for the open-source project. You can read about them <a href="/2019/04/09/bugfix-fcc-35751/" title="Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)">here</a> and <a href="/2019/04/07/bugfix-fcc-35791/" title="Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)">here</a>.</p>
+<!-- Read more -->
+
+<h2 id="Setting-Up-the-Local-Environment"><a href="#Setting-Up-the-Local-Environment" class="headerlink" title="Setting Up the Local Environment"></a>Setting Up the Local Environment</h2><p>This wasn’t my first rodeo with GitHub projects and I consider myself no stranger to commandline interface git, so I wasn’t expecting there to be any difficulty at this stage. While contributors can easily do work without setting up a local environment, it’s highly recommended for those who are interested in contributing regularly.</p>
+<p>When I opened up the guide to setting freeCodeCamp up locally, I was greeted with this:</p>
+<!-- markdownlint-disable MD034 -->
+<blockquote><!-- markdownlint-enable MD034 -->
+<p>As of 8 March 2019, please consider helping us test our new guide on how to <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally-using-docker.md">setup freeCodeCamp locally using Docker</a> instead of using this guide. It should result in fewer, if not zero, errors but we won’t know until enough devs try it.</p>
+<footer><strong>Todd Chaffee (@tchaffee) & Mrugesh Mohapatra (@raisedadead), freeCodeCamp</strong><cite><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally.md">Set up freeCodeCamp locally</a></cite></footer></blockquote>
+
+<p>This is my way of clarifying that <em>I did not use Docker</em> to setup the local environment - <a href="/2019/04/05/triage-docker-on-wsl/" title="Triage - Troubleshooting Docker on WSL">my attempts resulted in a fruitless four-hour triage attempt that could have been solved by using a virtual machine</a> to begin with.</p>
+<p>Instead, I went with the legacy approach: build freeCodeCamp locally using MongoDB, Node.js, and npm. This method I knew would work - I’ve had prior experience using my computer for this type of development.</p>
+<h3 id="Forking-the-Repository"><a href="#Forking-the-Repository" class="headerlink" title="Forking the Repository"></a>Forking the Repository</h3><p><img src="/assets/images/posts/bugfix/fcc_fork.png" alt="Screenshot of the forked repository under my account."></p>
+<p>This part was easy; you can find my fork <a target="_blank" rel="noopener" href="https://github.com/rimij405/freeCodeCamp">here</a>.</p>
+<h3 id="Preparing-the-Development-Environment"><a href="#Preparing-the-Development-Environment" class="headerlink" title="Preparing the Development Environment"></a>Preparing the Development Environment</h3><p><img src="/assets/images/posts/bugfix/fcc_cmder.png" alt="Screenshot of the Cmder application."></p>
+<p>I use command line git through git bash; on top of that, I’m using <a target="_blank" rel="noopener" href="https://cmder.net/">Cmder</a> - a neat little console emulator available on Windows - to keep my terminals together. An SSH key has already been set up for my own development environment as well.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_vscode.gif" alt="Screen capture of me typing the following paragraph into Visual Studio."></p>
+<p>I write my code in the same IDE I write my blog posts: <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a>. Microsoft might not be known for it’s open source technology (yet), but, VS Code is licensed under the <a target="_blank" rel="noopener" href="https://github.com/Microsoft/vscode/blob/master/LICENSE.txt">MIT License</a> agreement and it can be found on their <a target="_blank" rel="noopener" href="https://github.com/Microsoft/vscode">GitHub</a> repository.</p>
+<h3 id="Cloning-a-copy-of-freeCodeCamp"><a href="#Cloning-a-copy-of-freeCodeCamp" class="headerlink" title="Cloning a copy of freeCodeCamp"></a>Cloning a copy of freeCodeCamp</h3><p><img src="/assets/images/posts/bugfix/fcc_git_clone.png" alt="Screenshot of git clone operation information."></p>
+<p>I forgot to clone from my fork the first time I did this and ended up running:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:freeCodeCamp/freeCodeCamp.git fcc</span><br></pre></td></tr></table></figure>
+
+<p>To fix it, I changed into the directory and switched around the remotes:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> fcc</span><br><span class="line">git remote add upstream git@github.com:freeCodeCamp/freeCodeCamp.git</span><br><span class="line">git remote remove origin</span><br><span class="line">git remote add origin git@github.com:rimij405/freeCodeCamp.git</span><br></pre></td></tr></table></figure>
+
+<p>You can check your remotes with the following command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
+
+<p><img src="/assets/images/posts/bugfix/fcc_git_remote.png" alt="Screenshot of git remotes."></p>
+<p>Seems like all is good. The next step in the guide was to set up an upstream anyway, so, this ended up getting that done for me.</p>
+<h3 id="Building-the-local-copy"><a href="#Building-the-local-copy" class="headerlink" title="Building the local copy"></a>Building the local copy</h3><p>This can be useful for previewing edits to the pages as they would appear on the learning platform.</p>
+<h4 id="Installing-dependencies"><a href="#Installing-dependencies" class="headerlink" title="Installing dependencies"></a>Installing dependencies</h4><p>From the <code>Docker</code> guide, we are required to install the stable version of the <a target="_blank" rel="noopener" href="https://docs.docker.com/install/">community edition</a>, and the latest LTS version of <a target="_blank" rel="noopener" href="http://nodejs.org/"><code>Node.js</code></a>. (We also need <code>npm</code>, but that comes bundled with Node). Docker didn’t end up working out for me. My copy of Windows (Windows 10 Home) doesn’t include Hyper-V; if it did, this would have been much, much easier. Because of this, I had to follow the old-school installation instructions: MongoDB would have to do.</p>
+<h5 id="Node-js-npm"><a href="#Node-js-npm" class="headerlink" title="Node.js &amp; npm"></a>Node.js &amp; npm</h5><p><img src="/assets/images/posts/bugfix/fcc_node_install.png" alt="Screenshot of Node.js installation helper."></p>
+<p>I installed Node.js first because I knew it would be easy. I’ve got Node.js experience - no shenanigans there.</p>
+<h5 id="MongoDB-Community-Edition"><a href="#MongoDB-Community-Edition" class="headerlink" title="MongoDB Community Edition"></a>MongoDB Community Edition</h5><p>Since I’m working from Windows, I followed MongoDB Community Edition’s installation <a target="_blank" rel="noopener" href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#install-mdb-edition">guidelines</a>. I installed MongoDB as a service, but, you may need to install it in a different way for your system. Mongo’s database instance starts as a part of the service installation process, but, since I often work in Git Bash for Windows, I wanted to make sure the <code>mongo</code> and <code>mongod</code> commands were accessible from the <code>PATH</code> environment variable.</p>
+<p>I opened up my <code>.bashrc</code> file and added something along the lines of this to my script:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Inside ~/.bashrc, ~/.bash_profile, or ~/.profile</span></span><br><span class="line"><span class="keyword">if</span> [ -d <span class="string">&quot;/&lt;...&gt;/MongoDB/Server/&lt;version&gt;/bin&quot;</span> ] ; <span class="keyword">then</span></span><br><span class="line">  <span class="built_in">export</span> PATH=<span class="string">&quot;/&lt;...&gt;/MongoDB/Server/&lt;version&gt;/bin:<span class="variable">$PATH</span>&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+
+<p>What the above script does is check to see if the MongoDB directory exists and the adds it to the <code>PATH</code> variable. Be sure to replace <code>&lt;...&gt;</code> and <code>&lt;version&gt;</code> appropriately when setting this up for yourself.</p>
+<p>After editing the configuration file, either logout and log back into bash or source the file you’ve edited appropriately:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
+
+<p>With that, you can <code>echo &quot;$PATH&quot;</code> to confirm it’s been added correctly. Be sure to wrap the <code>PATH</code> variable in quotes when evaluating to ensure whitespace doesn’t mess with your terminal.</p>
+<p>If you want to see the first element in your PATH variable, you can use the following script - and don’t forget to check your version of Mongo to ensure the installation was correct!</p>
+<p><img src="/assets/images/posts/bugfix/fcc_path_example.gif" alt="Animation of the following bash script being executed in the terminal Git Bash for Windows."></p>
+<!--- Source: https://unix.stackexchange.com/questions/65932/how-to-get-the-first-word-of-a-string -->
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Get first element in the PATH.</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$PATH</span>&quot;</span> | <span class="built_in">head</span> -n1 | sed -e <span class="string">&#x27;s/:.*$//&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Check mongo and mongodb versions, respectively.</span></span><br><span class="line">mongo --version</span><br><span class="line">mongodb --version</span><br></pre></td></tr></table></figure>
+
+<h4 id="Configure-Dependencies"><a href="#Configure-Dependencies" class="headerlink" title="Configure Dependencies"></a>Configure Dependencies</h4><p>Next up: setting up the environment variables specific to Free Code Camp’s build process.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Create a copy of the &quot;sample.env&quot; and name it &quot;.env&quot;.</span></span><br><span class="line"><span class="comment"># Populate it with the necessary API keys and secrets:</span></span><br><span class="line">copy sample.env .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
+
+<p>Since the keys in the <code>.env</code> file are not required to be changed in order to run the app locally, I left the default values from sample.env as-is.</p>
+<p><em>(NB: Before editing any of the code, I made sure to checkout a local branch called <code>master-local</code>. I always like to be on the safe side!)</em></p>
+<p>Following that a call to <code>npm ci</code> will install the project’s dependencies. In my scenario, I also had to install <a target="_blank" rel="noopener" href="https://github.com/lerna/lerna#readme"><code>lerna</code></a> globally. Lerna is a package manager’s package manager so-to-speak. It’s really for projects with a large amount of packages to maintain.</p>
+<h5 id="Troubleshooting-Installation"><a href="#Troubleshooting-Installation" class="headerlink" title="Troubleshooting Installation"></a>Troubleshooting Installation</h5><p><strong>Be warned!</strong> If you don’t install lerna prior to executing <code>npm ci</code> it will just hang at the <code>lerna bootstrap</code> command that is called during the installation process. For me, I had to execute <code>lerna exec npm install</code> instead just to get the project’s dependencies to install in the first place.</p>
+<p>In addition, on Windows, there was an issue running the commands from the base system - instead, I needed to start an elevated PowerShell instance with administrator privileges:</p>
+<!--- Reference: https://serverfault.com/questions/464018/run-elevated-powershell-prompt-from-command-line -->
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Start a new powershell instance in-line, in the current working directory, using Git Bash.</span></span><br><span class="line">powershell <span class="variable">$pwd</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Start an elevated instance in a new window.</span></span><br><span class="line"><span class="built_in">Start-Process</span> PowerShell <span class="literal">-Verb</span> RunAs</span><br></pre></td></tr></table></figure>
+
+<p>From there, I was able to complete the development process!</p>
+<h3 id="Running-Local"><a href="#Running-Local" class="headerlink" title="Running Local"></a>Running Local</h3><p>With a quick call to <code>npm install</code> to ensure everything was properly installed, followed by an <code>npm run bootstrap</code>, the dependencies were ready. My instance of MongoDB was primed and ready - so with <code>npm seed</code>, the database was filled with test data provided by the repository.</p>
+<p>Underneath everything, the curriculum is just a Node.js application. I felt like I recognized what it was that I was looking at when I built a development environment with <code>npm develop</code>. With a welcoming, <code>DONE Compiled successfully in 52127ms</code> - we did it.</p>
+<p>I could now see my copy on the localhost.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_triage_success.png" alt="Screenshot of successful compilation process."></p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/projects/">Projects</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/tags/">Tags</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Build-Local"><span class="toc-number">1.</span> <span class="toc-text">Why Build Local?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Setting-Up-the-Local-Environment"><span class="toc-number">1.1.</span> <span class="toc-text">Setting Up the Local Environment</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Forking-the-Repository"><span class="toc-number">1.1.1.</span> <span class="toc-text">Forking the Repository</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Preparing-the-Development-Environment"><span class="toc-number">1.1.2.</span> <span class="toc-text">Preparing the Development Environment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cloning-a-copy-of-freeCodeCamp"><span class="toc-number">1.1.3.</span> <span class="toc-text">Cloning a copy of freeCodeCamp</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Building-the-local-copy"><span class="toc-number">1.1.4.</span> <span class="toc-text">Building the local copy</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Installing-dependencies"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">Installing dependencies</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Node-js-npm"><span class="toc-number">1.1.4.1.1.</span> <span class="toc-text">Node.js &amp; npm</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#MongoDB-Community-Edition"><span class="toc-number">1.1.4.1.2.</span> <span class="toc-text">MongoDB Community Edition</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Configure-Dependencies"><span class="toc-number">1.1.4.2.</span> <span class="toc-text">Configure Dependencies</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Troubleshooting-Installation"><span class="toc-number">1.1.4.2.1.</span> <span class="toc-text">Troubleshooting Installation</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Running-Local"><span class="toc-number">1.1.5.</span> <span class="toc-text">Running Local</span></a></li></ol></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&text=Triage - Installing Free Code Camp Locally"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&is_video=false&description=Triage - Installing Free Code Camp Locally"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Triage - Installing Free Code Camp Locally&body=Check out this article: http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&title=Triage - Installing Free Code Camp Locally"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&name=Triage - Installing Free Code Camp Locally&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/&t=Triage - Installing Free Code Camp Locally"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2024
+    Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+  
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/> 
+   
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" crossorigin="anonymous"></script>
+  
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

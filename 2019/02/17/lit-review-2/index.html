@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Review: Roads and Bridges: The Unseen Labor Behind Our Digital InfrastructureThis is the second of several literature reviews for content relevant to the humanitarian free and open source software cou">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Literature Review #2: Roads and Bridges">
+<meta property="og:url" content="http://effendiian.github.io/2019/02/17/lit-review-2/index.html">
+<meta property="og:site_name" content="@effendiian">
+<meta property="og:description" content="Review: Roads and Bridges: The Unseen Labor Behind Our Digital InfrastructureThis is the second of several literature reviews for content relevant to the humanitarian free and open source software cou">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2019-02-17T22:16:03.000Z">
+<meta property="article:modified_time" content="2020-04-23T15:31:54.000Z">
+<meta property="article:author" content="Ian Effendi">
+<meta property="article:tag" content="open-source">
+<meta property="article:tag" content="class">
+<meta property="article:tag" content="documentation">
+<meta property="article:tag" content="bugs">
+<meta property="article:tag" content="issues">
+<meta property="article:tag" content="reading">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Literature Review #2: Roads and Bridges</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<!--  -->
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2019/03/08/quiz-1/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2019/02/17/brickhack-v/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/02/17/lit-review-2/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/02/17/lit-review-2/&text=Literature Review #2: Roads and Bridges"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/02/17/lit-review-2/&is_video=false&description=Literature Review #2: Roads and Bridges"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Literature Review #2: Roads and Bridges&body=Check out this article: http://effendiian.github.io/2019/02/17/lit-review-2/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/02/17/lit-review-2/&name=Literature Review #2: Roads and Bridges&description=&lt;h1 id=&#34;Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure&#34;&gt;&lt;a href=&#34;#Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure&#34; class=&#34;headerlink&#34; title=&#34;Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&#34;&gt;&lt;/a&gt;Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&lt;/h1&gt;&lt;p&gt;This is the second of several literature reviews for content relevant to the humanitarian free and open source software course. In this entry, I will be reviewing &lt;em&gt;&lt;a href=&#34;https://github.com/ritjoe/hfoss/blob/master/assets/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf&#34;&gt;Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&lt;/a&gt;&lt;/em&gt; by &lt;a href=&#34;https://nadiaeghbal.com/&#34;&gt;Nadia Eghbal&lt;/a&gt;.&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/02/17/lit-review-2/&t=Literature Review #2: Roads and Bridges"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure"><span class="toc-number">1.</span> <span class="toc-text">Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Basics"><span class="toc-number">1.1.</span> <span class="toc-text">The Basics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Gist"><span class="toc-number">1.2.</span> <span class="toc-text">The Gist</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Good"><span class="toc-number">1.3.</span> <span class="toc-text">The Good</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Bad"><span class="toc-number">1.4.</span> <span class="toc-text">The Bad</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-A"><span class="toc-number">1.5.</span> <span class="toc-text">Q&amp;A</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Literature Review #2: Roads and Bridges
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Ian Effendi</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-02-17T22:16:03.000Z" class="dt-published" itemprop="datePublished">2019-02-17</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/hfoss/">hfoss</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/bugs/" rel="tag">bugs</a>, <a class="p-category" href="/tags/class/" rel="tag">class</a>, <a class="p-category" href="/tags/documentation/" rel="tag">documentation</a>, <a class="p-category" href="/tags/issues/" rel="tag">issues</a>, <a class="p-category" href="/tags/open-source/" rel="tag">open-source</a>, <a class="p-category" href="/tags/reading/" rel="tag">reading</a>
+    </div>
+
+
+      <span itemprop="license"></span>
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h1 id="Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure"><a href="#Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure" class="headerlink" title="Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure"></a>Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</h1><p>This is the second of several literature reviews for content relevant to the humanitarian free and open source software course. In this entry, I will be reviewing <em><a target="_blank" rel="noopener" href="https://github.com/ritjoe/hfoss/blob/master/assets/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf">Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</a></em> by <a target="_blank" rel="noopener" href="https://nadiaeghbal.com/">Nadia Eghbal</a>.</p>
+<span id="more"></span>
+
+<hr>
+<h2 id="The-Basics"><a href="#The-Basics" class="headerlink" title="The Basics"></a>The Basics</h2><p>Nadia Eghbal is a Protocol Labs researcher based in San Francisco and is the author of <em>Roads and Bridges</em>. Eghbal explores the production and economic models behind open-source software, and had <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/nadiaeghbal/">previously worked at GitHub</a>, building programs, products, and partnerships to better support open-source developers.</p>
+<p>In July of 2016, Eghbal published <em>Roads and Bridges</em>, a deeper look at the maintainance required of our digital infrastructure. Likening this massive support system (with an unprecedented demand) to physical infrastructure (<em>a la</em> roads and bridges), Eghbal draws out support for the great work that open source developers do - and highlight the challenges that come with sustaining that infrastructure.</p>
+<p>In addition to writing longform research on open-source software, Eghbal has written extensively on the subject in <a target="_blank" rel="noopener" href="https://medium.com/@nayafia">shortform</a> and has been a part of <a target="_blank" rel="noopener" href="https://changelog.com/rfc">podcasts that highlight</a> the <a target="_blank" rel="noopener" href="https://hopeinsource.com/">culture of open source</a>.</p>
+<p>You can find more of her research on her personal website, <a target="_blank" rel="noopener" href="https://nadiaeghbal.com/research/">here</a>.</p>
+<h2 id="The-Gist"><a href="#The-Gist" class="headerlink" title="The Gist"></a>The Gist</h2><p>Eghbal’s work is a detailed retelling of the open-source history, reaching as far back as 1998, when OpenSSL was first created between a group of security experts in the UK. OpenSSL - a cybersecurity project that is known for enabling websites with the ability to transmit sensitive data over the internet - was recently susceptible to Heartbleed, a dire security flaw overlooked by its handful of maintainers. </p>
+<p>But, OpenSSL is used by millions around the world - the internet wouldn’t exist as it does today without it. OpenSSL’s problems are indicative of a recurring issue in the open-source community’s narrative: the use of free software without the support to maintain it.</p>
+<hr>
+<h2 id="The-Good"><a href="#The-Good" class="headerlink" title="The Good"></a>The Good</h2><ul>
+<li><ol>
+<li>There is a great encouragement in the writing to reuse and borrow from what others have created before.</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>Free software makes building empowering software accessible and possible to those with limited funds.</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>The sheer size and wealth of material that Eghbal presents is crucial and necessary to understanding the full context of open source history: the fact that such material has been released for free access to all is just as telling of where Eghbal stands on the conversation.</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="The-Bad"><a href="#The-Bad" class="headerlink" title="The Bad"></a>The Bad</h2><ul>
+<li><ol>
+<li>New developers who consistently build projects using tools from others before them may never gain a deeper understanding of the work they create.</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>Developers without a deep understanding of the work that they create rely on possibly insecure services and infrastructure that could collapse - the more who use a particular project as a dependency without understanding it, the greater the risk becomes of system-wide failure. (See: <a target="_blank" rel="noopener" href="https://github.com/npm/npm/issues/19883">NPM&#x2F;Node pre-release mayhem</a>).</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>The greater the gap in skill, the harder it will be for younger developers to fill the holes left by older developers. People can’t work on software forever and it needs to be maintained; but software today is, “deteriorating,” due to the lack of funding and contributions (pp. 76).</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="Q-A"><a href="#Q-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><ul>
+<li><ol>
+<li>What organizations are actively contributing to the problems at hand?</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>What can be done to keep companies investing in open source over the years?</li>
+</ol>
+</li>
+<li><ol start="3">
+<li>Are our communities of software too big to fail? NodeJS? Others like that? What can we do to combat degrading and insecure code?</li>
+</ol>
+</li>
+</ul>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/projects/">Projects</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/tags/">Tags</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure"><span class="toc-number">1.</span> <span class="toc-text">Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Basics"><span class="toc-number">1.1.</span> <span class="toc-text">The Basics</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Gist"><span class="toc-number">1.2.</span> <span class="toc-text">The Gist</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Good"><span class="toc-number">1.3.</span> <span class="toc-text">The Good</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Bad"><span class="toc-number">1.4.</span> <span class="toc-text">The Bad</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-A"><span class="toc-number">1.5.</span> <span class="toc-text">Q&amp;A</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/02/17/lit-review-2/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/02/17/lit-review-2/&text=Literature Review #2: Roads and Bridges"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/02/17/lit-review-2/&is_video=false&description=Literature Review #2: Roads and Bridges"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Literature Review #2: Roads and Bridges&body=Check out this article: http://effendiian.github.io/2019/02/17/lit-review-2/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/02/17/lit-review-2/&title=Literature Review #2: Roads and Bridges"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/02/17/lit-review-2/&name=Literature Review #2: Roads and Bridges&description=&lt;h1 id=&#34;Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure&#34;&gt;&lt;a href=&#34;#Review-Roads-and-Bridges-The-Unseen-Labor-Behind-Our-Digital-Infrastructure&#34; class=&#34;headerlink&#34; title=&#34;Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&#34;&gt;&lt;/a&gt;Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&lt;/h1&gt;&lt;p&gt;This is the second of several literature reviews for content relevant to the humanitarian free and open source software course. In this entry, I will be reviewing &lt;em&gt;&lt;a href=&#34;https://github.com/ritjoe/hfoss/blob/master/assets/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf&#34;&gt;Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&lt;/a&gt;&lt;/em&gt; by &lt;a href=&#34;https://nadiaeghbal.com/&#34;&gt;Nadia Eghbal&lt;/a&gt;.&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/02/17/lit-review-2/&t=Literature Review #2: Roads and Bridges"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2024
+    Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

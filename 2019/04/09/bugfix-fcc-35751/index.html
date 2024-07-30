@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Squashing Bugs - freeCodeCamp Issue #35751For my first magic trick:  I’m contributing to freeCodeCamp and helped make two pull requests (#35809, #35810) referencing this issue (#35751). The nonprofit’">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)">
+<meta property="og:url" content="http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/index.html">
+<meta property="og:site_name" content="@effendiian">
+<meta property="og:description" content="Squashing Bugs - freeCodeCamp Issue #35751For my first magic trick:  I’m contributing to freeCodeCamp and helped make two pull requests (#35809, #35810) referencing this issue (#35751). The nonprofit’">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://effendiian.github.io/assets/images/posts/bugfix/fcc_acknowledgements.png">
+<meta property="article:published_time" content="2019-04-09T12:29:08.000Z">
+<meta property="article:modified_time" content="2024-07-30T12:09:06.860Z">
+<meta property="article:author" content="Ian Effendi">
+<meta property="article:tag" content="open-source">
+<meta property="article:tag" content="bugfix">
+<meta property="article:tag" content="education">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://effendiian.github.io/assets/images/posts/bugfix/fcc_acknowledgements.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<!--  -->
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2019/04/22/quiz-2/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2019/04/08/triage-fcc-local-dev-setup/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&text=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&is_video=false&description=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)&body=Check out this article: http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&name=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&t=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Squashing-Bugs-freeCodeCamp-Issue-35751"><span class="toc-number">1.</span> <span class="toc-text">Squashing Bugs - freeCodeCamp Issue #35751</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.1.</span> <span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Issue"><span class="toc-number">1.2.</span> <span class="toc-text">The Issue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Building-the-Local-Environment"><span class="toc-number">1.3.</span> <span class="toc-text">Building the Local Environment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reviewing-the-Challenges"><span class="toc-number">1.4.</span> <span class="toc-text">Reviewing the Challenges</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Applied-Accessibility"><span class="toc-number">1.4.1.</span> <span class="toc-text">Applied Accessibility</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Completing-a-Challenge"><span class="toc-number">1.4.2.</span> <span class="toc-text">Completing a Challenge</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Forming-a-Challenge"><span class="toc-number">1.4.3.</span> <span class="toc-text">Forming a Challenge</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Identifying-the-Bug"><span class="toc-number">1.4.4.</span> <span class="toc-text">Identifying the Bug</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Squashing-the-Bug"><span class="toc-number">1.5.</span> <span class="toc-text">Squashing the Bug</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-the-Pull-Request"><span class="toc-number">1.6.</span> <span class="toc-text">Creating the Pull Request</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other-Changes"><span class="toc-number">1.7.</span> <span class="toc-text">Other Changes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Updated-April-10th-2019-10-00-AM"><span class="toc-number">1.8.</span> <span class="toc-text">Updated April 10th, 2019 - 10:00 AM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Updated-April-10th-2019-12-33-PM"><span class="toc-number">1.9.</span> <span class="toc-text">Updated April 10th, 2019 - 12:33 PM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Updated-April-29th-2019-8-30-AM"><span class="toc-number">1.10.</span> <span class="toc-text">Updated April 29th, 2019 - 8:30 AM</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Ian Effendi</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-04-09T12:29:08.000Z" class="dt-published" itemprop="datePublished">2019-04-09</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/hfoss/">hfoss</a> › <a class="category-link" href="/categories/freeCodeCamp/">freeCodeCamp</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/bugfix/" rel="tag">bugfix</a>, <a class="p-category" href="/tags/education/" rel="tag">education</a>, <a class="p-category" href="/tags/open-source/" rel="tag">open-source</a>
+    </div>
+
+
+      <span itemprop="license"></span>
+    </div>
+  </header>
+  
+<div class="article-gallery">
+    
+    <a class="gallery-item" href="/assets/images/posts/bugfix/fcc_acknowledgements.png" rel="gallery_clz8dpr2o00030rex6dntdz8f">
+        <img src="/assets/images/posts/bugfix/fcc_acknowledgements.png" itemprop="image" />
+    </a>
+    
+</div>
+
+
+  <div class="content e-content" itemprop="articleBody">
+    <h1 id="Squashing-Bugs-freeCodeCamp-Issue-35751"><a href="#Squashing-Bugs-freeCodeCamp-Issue-35751" class="headerlink" title="Squashing Bugs - freeCodeCamp Issue #35751"></a>Squashing Bugs - freeCodeCamp Issue #35751</h1><p>For my first magic trick:</p>
+<p><img src="/assets/images/posts/bugfix/fcc_logo.svg" alt="Logo for Free Code Camp."></p>
+<p>I’m contributing to <a target="_blank" rel="noopener" href="https://www.freecodecamp.org/">freeCodeCamp</a> and helped make two pull requests (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35809">#35809</a>, <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35810">#35810</a>) referencing this issue (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35751">#35751</a>). The nonprofit’s mission is simple: help <em>campers</em> learn to code. For free. (<em>And this time, it’s free as in pizza <strong>and</strong> free as in libre</em>). I hope by documenting my own process, members of the community might get to see an example of what it is that goes on behind the scenes. Before jumping in, I did a little bit of research on freeCodeCamp. <a href="/2019/04/04/commarch-fcc/" title="FLOSS in Review: freeCodeCamp">You can read my FLOSS review post here.</a></p>
+<!-- Read more -->
+
+<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>I started writing this post as soon as I <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35751#issuecomment-480128455">commented</a>, volunteering to fix the outstanding issue and was quickly welcomed into the community!</p>
+<p>My first step after volunteering was to read the <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/CONTRIBUTING.md">contributor’s guide</a>. After reviewing their <a target="_blank" rel="noopener" href="https://www.freecodecamp.org/code-of-conduct">Code of Conduct</a> and deciding that I’d want to work locally before submitting my changes, I hopped into their guides on <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-work-on-coding-challenges.md">coding challenge</a> and <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally.md">local development</a>.</p>
+<p>I was ready to roll. Now would be a good time to review what the issue actually was!</p>
+<h2 id="The-Issue"><a href="#The-Issue" class="headerlink" title="The Issue"></a>The Issue</h2><p>Issue <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35751">#35751</a> was posted about a day ago by Randell Dawson (<a target="_blank" rel="noopener" href="https://github.com/RandellDawson">@RandellDawson</a>) with the title: “Need to add full working solutions for over 100 challenges in the Responsive Web Design section.”</p>
+<p>I’ve copied the pertinent part of the initial post below for your convienience:</p>
+<!-- markdownlint-disable MD034 -->
+<blockquote><!-- markdownlint-enable MD034 -->
+
+<p>With a quick search, I found there are currently 104 challenges in the Responsive Web Design section that are missing a full working solution. I wan[t] to use this issue to help track who wants to work on adding these and when the PRs get merged.</p>
+<footer><strong>Randell Dawson, freeCodeCamp</strong><cite><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35751">Issue #35751</a></cite></footer></blockquote>
+
+<p>Don’t worry, I didn’t have to make the solution for all <strong>104</strong> at once. I signed up to tackle the 16 challenges underneath <code>Applied Accessibility</code>. Seems simple enough, right?</p>
+<p>This meant I needed to fix the following files:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/give-links-meaning-by-using-descriptive-link-text.english.md">give-links-meaning-by-using-descriptive-link-text.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/improve-accessibility-of-audio-content-with-the-audio-element.english.md">improve-accessibility-of-audio-content-with-the-audio-element.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/improve-chart-accessibility-with-the-figure-element.english.md">improve-chart-accessibility-with-the-figure-element.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/improve-form-field-accessibility-with-the-label-element.english.md">improve-form-field-accessibility-with-the-label-element.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/improve-readability-with-high-contrast-text.english.md">improve-readability-with-high-contrast-text.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/jump-straight-to-the-content-using-the-main-element.english.md">jump-straight-to-the-content-using-the-main-element.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/know-when-alt-text-should-be-left-blank.english.md">know-when-alt-text-should-be-left-blank.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/make-elements-only-visible-to-a-screen-reader-by-using-custom-css.english.md">make-elements-only-visible-to-a-screen-reader-by-using-custom-css.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/make-links-navigable-with-html-access-keys.english.md">make-links-navigable-with-html-access-keys.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/make-screen-reader-navigation-easier-with-the-footer-landmark.english.md">make-screen-reader-navigation-easier-with-the-footer-landmark.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/make-screen-reader-navigation-easier-with-the-header-landmark.english.md">make-screen-reader-navigation-easier-with-the-header-landmark.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/make-screen-reader-navigation-easier-with-the-nav-landmark.english.md">make-screen-reader-navigation-easier-with-the-nav-landmark.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/use-tabindex-to-add-keyboard-focus-to-an-element.english.md">use-tabindex-to-add-keyboard-focus-to-an-element.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/use-tabindex-to-specify-the-order-of-keyboard-focus-for-several-elements.english.md">use-tabindex-to-specify-the-order-of-keyboard-focus-for-several-elements.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/wrap-content-in-the-article-element.english.md">wrap-content-in-the-article-element.english.md</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/wrap-radio-buttons-in-a-fieldset-element-for-better-accessibility.english.md">wrap-radio-buttons-in-a-fieldset-element-for-better-accessibility.english.md</a></li>
+</ul>
+<h2 id="Building-the-Local-Environment"><a href="#Building-the-Local-Environment" class="headerlink" title="Building the Local Environment"></a>Building the Local Environment</h2><p>So far, one of the more frustrating development environments that I’ve had to set up. I really wish there was an easier way for the project to run on Windows 10 Home. That being said, you can read about my exploits here.</p>
+<p>That long story is best told <a href="/2019/04/08/triage-fcc-local-dev-setup/" title="Triage - Installing Free Code Camp Locally">separately</a>; but you should know that it compiled successfully and I was greeted with a working site:</p>
+<p><img src="/assets/images/posts/bugfix/fcc_triage_success.png" alt="Screenshot of successful compilation process."></p>
+<p>You can read the steps I took to get the environment ready for development <a href="/2019/04/08/triage-fcc-local-dev-setup/" title="Triage - Installing Free Code Camp Locally">here</a>.</p>
+<p>Once the local development environment is ready, developers are encouraged to:</p>
+<ol>
+<li>Seed the MongoDB instance with <code>npm run seed</code>.</li>
+<li>Host the platform on a local server with <code>npm run develop</code>.</li>
+<li>Perform all of the JS tests in the system <code>npm test</code>.</li>
+</ol>
+<p>Once changes are made, there is even an interactive tool that can help with creating a proper commit message, with <code>npm run commit</code>.</p>
+<h2 id="Reviewing-the-Challenges"><a href="#Reviewing-the-Challenges" class="headerlink" title="Reviewing the Challenges"></a>Reviewing the Challenges</h2><p>As part of the broader 104 challenges missing full working solutions, the main issue itself has had the work divvied up between different contributors. The platform’s curriculum is broken up into nine sections: six core courses, one section for interview prep, and one additional section for handling certificates. I’ve agreed to work on a sub-section of the first course, Responsive Web Design. My 16 challenges deal with the subject of ‘Applied Accessibility’.</p>
+<p>Of note, my work will only be addressing the issue in the core English translation of the challenges. As per the instructions of the current developers, they always track changes to the solutions through the English version of the challenges so that the translations can be updated without worrying about the core logic behind the code itself.</p>
+<h3 id="Applied-Accessibility"><a href="#Applied-Accessibility" class="headerlink" title="Applied Accessibility"></a>Applied Accessibility</h3><p>According to the curriculum’s introduction on the topic, <em>accessibility</em>, “generally means having web content and a user interface that can be understood, navigated, and interacted with a broad audience.” People of various ability use the internet - if your website contains layer upon layer of beautiful images, video, and audio, without containing the foundational elements that make it accessible, the potential audience that can utilize such a website shrinks.</p>
+<p>There is something to be said about a developer’s responsibility to keeping accessibility a priority - ensuring that a website is inclusive of users that require assitive technology is a crucial part in making sure the internet remains free and open. One could argue that inaccessible software, that cannot be run, read, repaired, or redistributed by everyone is not 100% open.</p>
+<p>On January 18th, 2017, <a target="_blank" rel="noopener" href="https://opensource.com/article/17/3/applications-should-be-accessible-all">the U.S. Federal Registry published the Revised Section 508 amendment to the Rehabilitation Act of 1973</a>. The new standards renewed encouragement for developers to create accessible web and mobile applications. <a target="_blank" rel="noopener" href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3 Consortium’s Web Content Accessibility Guidelines</a> (WCAG) set the international standard for accessibility and provides a number of criteria for developers to use to check their work against.</p>
+<p>The lessons under Applied Accessibility explore these general concepts:</p>
+<ol>
+<li>Writing well-organized code that uses the appropriate markup.</li>
+<li>Ensuring text alternatives exist for non-text and visual content.</li>
+<li>Creating an easily-navigated page that’s keyboard-friendly.</li>
+</ol>
+<h3 id="Completing-a-Challenge"><a href="#Completing-a-Challenge" class="headerlink" title="Completing a Challenge"></a>Completing a Challenge</h3><p>Taking a look at the first challenge in the provided list gives us <a target="_blank" rel="noopener" href="https://learn.freecodecamp.org/responsive-web-design/applied-accessibility/give-links-meaning-by-using-descriptive-link-text">‘Give Links Meaning by Using Descriptive Link Text’</a>.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_challenge1_problem.png" alt="Screenshot of the first challenge being troubleshot."></p>
+<p>The website itself has three sections:</p>
+<ol>
+<li>The description of the prompt and interaction buttons. (On the left in the picture).</li>
+<li>The starter code that the user needs to edit to submit and the output console. (In the middle).</li>
+<li>The preview of the starter code.</li>
+</ol>
+<p>In this particular challenge, the camper is expected to make the page more accessible. Free Code Camp accomplishes this by placing a specific, guided prompt for the user to accomplish. In this instance, the prompt asks users to move, “the anchor (<code>a</code>) tags so they wrap around the text “information about batteries” instead of “Click here”. This improvement will allow users of screen readers to gleam more context from a page’s link when the utilize functionality to read out a list of all the links on the page.</p>
+<p>For each challenge, to familiarize myself with the issue at hand, I try solving the exercise myself. I change the anchor tag in the demo area so it reads as <code>&lt;a href=&quot;&quot;&gt;Click here for more information about batteries&lt;/a&gt;</code>. This should fulfill the prompt, right?</p>
+<p><img src="/assets/images/posts/bugfix/fcc_challenge1_attempt1.png" alt="Screenshot of my first attempt to solve the exercise."></p>
+<p>Wrong!</p>
+<p><img src="/assets/images/posts/bugfix/fcc_challenge1_fail1.png" alt="Screenshot of my first failure in solving the exercise."></p>
+<p>Instead of passing, the test has failed because ‘Click here’ is still contained by the anchor tag. The platform gives back some helpful feedback for users who might be stuck solving a problem. If the test information doesn’t make it clear enough, users can watch a video, ask for help, or get a hint in order to make progress. Campers can even start the process over by reseting all of the code back to the original state.</p>
+<p>Now, I don’t want to be wrong, so, I move the tag to the right place and submit once more.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_challenge1_success1.png" alt="Screenshot of my first success in solving the exercise."></p>
+<p>Seeing as all of the tests have passed, I’m greeted by a big, green checkmark. How fulfilling! If I can complete the challenge, what is it that I’ll need to bugfix next!</p>
+<h3 id="Forming-a-Challenge"><a href="#Forming-a-Challenge" class="headerlink" title="Forming a Challenge"></a>Forming a Challenge</h3><p>It would help to know what makes a challenge and now is a good time to look under the hood to find out more about the problem we’re trying to fix. Challenges aren’t too complicated or difficult to understand: they’re just markdown files (with some YAML syntax here and there). In fact, they’re written in the same way <em>that my own blog posts are written</em>.</p>
+<p>These six sections make up a challenge’s markdown file:</p>
+<ol>
+<li>The YAML header containing challenge metadata.</li>
+<li><code>Description</code> - The challenge’s description.</li>
+<li><code>Instructions</code> - The prompt that explains the challenge users need to solve.</li>
+<li><code>Tests</code> - A fenced code block with a YAML list of assertions.</li>
+<li><code>Challenge Seed</code> - The starting code given that needs to be modified in order to solve.</li>
+<li><code>Solution</code> - The full solution required to solve the problem.</li>
+</ol>
+<p>A challenge is identified by a unique ID, title, and challenge type - all of which are stored in the metadata section. As all challenges will ideally contain a link to a <a target="_blank" rel="noopener" href="https://scrimba.com/" title="Platform for streamcasting code.">Scrimba</a> video, the metadata will often include a relevant link in this section as well.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_challenge1_metadata.png" alt="Example of challenge metadata."></p>
+<h3 id="Identifying-the-Bug"><a href="#Identifying-the-Bug" class="headerlink" title="Identifying the Bug"></a>Identifying the Bug</h3><p>The section that we’re most concerned with, however, is the solution section.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_challenge1_solution.png" alt="Example of incorrect solution section."></p>
+<p>A lot of these challenges have <code>//solution required</code> in place of an actual solution! </p>
+<p>These solutions can often be as short as one line of code:</p>
+<p><img src="/assets/images/posts/bugfix/fcc_example1_solution.png" alt="Example of a short solution."></p>
+<p>And in other cases, they can be several lines long:</p>
+<p><img src="/assets/images/posts/bugfix/fcc_example2_solution.png" alt="Example of a long solution."></p>
+<p>The important part is that they remain correct.</p>
+<h2 id="Squashing-the-Bug"><a href="#Squashing-the-Bug" class="headerlink" title="Squashing the Bug"></a>Squashing the Bug</h2><p>The process for fixing these remains simple:</p>
+<ol>
+<li>Solve the exercise.</li>
+<li>Replace the <code>//solution required</code> comment with the full solution.</li>
+<li>Test the curriculum using the <code>npm run test:curriculum</code> command.</li>
+</ol>
+<p>All tests should either return as <code>passing</code> or <code>pending</code>. The results of the <code>test:curriculum</code> script returns the following:</p>
+<p><img src="/assets/images/posts/bugfix/fcc_test1_default.png" alt="Result of tests on local repository with no changes."></p>
+<p>7773 passing tests against 810 pending. We are complete once those 16 solutions move from <code>pending</code> to <code>passing</code>! The curriculum tests takes about 4 minutes to resolve, meaning, it’s more effective to test the changes in bulk, as opposed to testing after each individual modification.</p>
+<p>I knew I was on the right track after fixing the first test to increment those passing tests by 1 to 7774.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_test2_success.png" alt="Result of tests on local repository with one correct change."></p>
+<p>Now only 15 more to go.</p>
+<p>If you were curious to know what a failed test result would look like, you’d get a third notice stating that a test has failed and the script would crash out with an <code>npm ERR! Test failed.</code> message. Luckily, as it is incredibly helpful, it tells you exactly which test failed!</p>
+<p><img src="/assets/images/posts/bugfix/fcc_test3_fail.png" alt="Result of tests on local repository with an incorrect change."></p>
+<p>The good thing is that my own tests will fail and crash out after around 7~10 seconds of terminal silence if I’ve made a mistake since the accessibility exercises are toward the start of the curriculum’s challenges. In this one instance, inactivity in the terminal for more than 4 minutes likely means my work was successful!</p>
+<p>You’re more than welcome to see the exact edits made to the files on the pull request. All challenge fixes were included in one pull request.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_challenges_fixes.png" alt="Screenshot of edits made to all the files requiring solutions."></p>
+<h2 id="Creating-the-Pull-Request"><a href="#Creating-the-Pull-Request" class="headerlink" title="Creating the Pull Request"></a>Creating the Pull Request</h2><p>After completing all of my necessary edits, I just needed to make an appropriate pull request.</p>
+<p>First, created a new branch that followed contributor naming guidelines for this sort of situation and then checked it out:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b fix/add-accessibility-solutions</span><br></pre></td></tr></table></figure>
+
+<p>Now, I could add my files to the commit.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_commit_files.png" alt="Screenshot of modified files since last commit."></p>
+<p>Wait a second, what are all these <code>*.json</code> files? It turns out, the project doesn’t have a gitignore for stopping the <code>package.json</code> and <code>package-lock.json</code> files that are created whenever we call <code>lerna bootstrap</code> or <code>lerna exec npm install</code>. Lerna will actually execute the <code>npm install</code> command for every subdirectory that has node-modules within it. This strategy allows freeCodeCamp to exist on one large monorepository. The alternative would be splitting each major subdirectory into their own individual repositories and treating them as their own.</p>
+<p>For the most part, I’m seeing these files because I decided to build the project locally. I can <em>safely</em> ignore these files and refrain from adding them to my commit because they are generated as part of the build process. Instead, I want to specifically add the files that I know that I edited. While I could add each individually by name, I can also use a wildcard operator to add all of the markdown files to my commit. Only the challenges are markdown files and the markdown files are the ones I want to commit!</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># While in the freeCodeCamp/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/ directory:</span></span><br><span class="line">git add *.md</span><br></pre></td></tr></table></figure>
+
+<p><img src="/assets/images/posts/bugfix/fcc_commit_files2.png" alt="Screenshot of modified files added to the current commit."></p>
+<p>Now, I can create a commit that is specifically for these edited files. Luckily, the project comes with an <code>npm run commit</code> command to help out.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_missing_script1.png" alt="Missing commit script."></p>
+<p>Turns out that the documentation isn’t quite up to date!</p>
+<p><img src="/assets/images/posts/bugfix/fcc_missing_script2.png" alt="Missing commit script reference."></p>
+<p>I’ll have to make a separate pull request to fix that issue separately. In the meantime, we’ll commit our files in the staging area by hand and then discard all the changes made in the working directory by other files.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Commit the files added to the staging area.</span></span><br><span class="line">git commit -m <span class="string">&quot;fix(curriculum): update accessibility challenges related to issue #35751&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Discard all the other changes made in the working directory by other files.</span></span><br><span class="line">git checkout -- .</span><br></pre></td></tr></table></figure>
+<p>After confirming that all of the files pass the appropriate tests…</p>
+<p><img src="/assets/images/posts/bugfix/fcc_test4_complete.png" alt="Screenshot of all successful tests."></p>
+<p>…I can create the pull request.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull1.png" alt="Screenshot of creating a pull request."></p>
+<p>After submission, the pull request will automatically trigger a new Travis CI build using the established continuous integration pipeline.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull2.png" alt="Screenshot of submitted pull request and pending Travis CI build results."></p>
+<p>Given enough time, the build validated my pull request’s changes: it was successful!</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull3.png" alt="Screenshot of a successful Travis CI build."></p>
+<h2 id="Other-Changes"><a href="#Other-Changes" class="headerlink" title="Other Changes"></a>Other Changes</h2><p>Following all this, I notified the maintainers in the original issue (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35751">#35751</a>) that my pull request (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35809">#35809</a>) was been submitted. While reading through the thread, I noticed there were some other issues with the accessibility challenges that needed to be reviewed: specifically for <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/curriculum/challenges/english/01-responsive-web-design/applied-accessibility/avoid-colorblindness-issues-by-using-sufficient-contrast.english.md">&#x2F;curriculum&#x2F;challenges&#x2F;english&#x2F;01-responsive-web-design&#x2F;applied-accessibility&#x2F;avoid-colorblindness-issues-by-using-sufficient-contrast.english.md@master</a>.</p>
+<p>As pointed out by <a target="_blank" rel="noopener" href="https://github.com/huyenltnguyen">@huyenltnguyen</a> in <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35751#issuecomment-481079680">this comment</a>, JS solutions are not full solutions!</p>
+<p>So I made a quick edit, solved another challenge, staged and commit my changes, and created another pull request (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35810">#35810</a>) to close out my contributions to this issue.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull4.png" alt="Image of pull request pending build process approval."></p>
+<p>With that, this bug is officially squashed. (Pending their acceptance of my pull requests, of course).</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull7.png" alt="Image of pull request passing Travis CI build process."></p>
+<hr>
+<h2 id="Updated-April-10th-2019-10-00-AM"><a href="#Updated-April-10th-2019-10-00-AM" class="headerlink" title="Updated April 10th, 2019 - 10:00 AM"></a>Updated April 10th, 2019 - 10:00 AM</h2><p>As of today, my pull requests have both been approved for merging into the main branch!</p>
+<p>Pull Request (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35809">#35809</a>):</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull8.png" alt="Screenshot of successful pull request."></p>
+<p>Pull Request (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35810">#35810</a>):</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull9.png" alt="Screenshot of successful pull request."></p>
+<h2 id="Updated-April-10th-2019-12-33-PM"><a href="#Updated-April-10th-2019-12-33-PM" class="headerlink" title="Updated April 10th, 2019 - 12:33 PM"></a>Updated April 10th, 2019 - 12:33 PM</h2><p>One of the pull requests has been merged into the project’s main branch!</p>
+<p>Pull Request (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35810">#35810</a>):</p>
+<p><img src="/assets/images/posts/bugfix/fcc_merge2.png" alt="Screenshot of successful merge."></p>
+<h2 id="Updated-April-29th-2019-8-30-AM"><a href="#Updated-April-29th-2019-8-30-AM" class="headerlink" title="Updated April 29th, 2019 - 8:30 AM"></a>Updated April 29th, 2019 - 8:30 AM</h2><p>The other pull request has been merged into the project’s main branch!</p>
+<p>Pull Request (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35809">#35809</a>):</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull10.png" alt="Screenshot of successful merge"></p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/projects/">Projects</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/tags/">Tags</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Squashing-Bugs-freeCodeCamp-Issue-35751"><span class="toc-number">1.</span> <span class="toc-text">Squashing Bugs - freeCodeCamp Issue #35751</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.1.</span> <span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Issue"><span class="toc-number">1.2.</span> <span class="toc-text">The Issue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Building-the-Local-Environment"><span class="toc-number">1.3.</span> <span class="toc-text">Building the Local Environment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reviewing-the-Challenges"><span class="toc-number">1.4.</span> <span class="toc-text">Reviewing the Challenges</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Applied-Accessibility"><span class="toc-number">1.4.1.</span> <span class="toc-text">Applied Accessibility</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Completing-a-Challenge"><span class="toc-number">1.4.2.</span> <span class="toc-text">Completing a Challenge</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Forming-a-Challenge"><span class="toc-number">1.4.3.</span> <span class="toc-text">Forming a Challenge</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Identifying-the-Bug"><span class="toc-number">1.4.4.</span> <span class="toc-text">Identifying the Bug</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Squashing-the-Bug"><span class="toc-number">1.5.</span> <span class="toc-text">Squashing the Bug</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-the-Pull-Request"><span class="toc-number">1.6.</span> <span class="toc-text">Creating the Pull Request</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other-Changes"><span class="toc-number">1.7.</span> <span class="toc-text">Other Changes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Updated-April-10th-2019-10-00-AM"><span class="toc-number">1.8.</span> <span class="toc-text">Updated April 10th, 2019 - 10:00 AM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Updated-April-10th-2019-12-33-PM"><span class="toc-number">1.9.</span> <span class="toc-text">Updated April 10th, 2019 - 12:33 PM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Updated-April-29th-2019-8-30-AM"><span class="toc-number">1.10.</span> <span class="toc-text">Updated April 29th, 2019 - 8:30 AM</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&text=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&is_video=false&description=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)&body=Check out this article: http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&title=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&name=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/&t=Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2024
+    Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+  
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/> 
+   
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" crossorigin="anonymous"></script>
+  
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
