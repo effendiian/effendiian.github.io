@@ -139,6 +139,11 @@ theme_config:
     start_year: 2018
     end_year: 2024
 
+  # Gravatar
+  gravatar:
+    email: effendiian@gmail.com
+    hash: 86c9233ee106930ee0a8612ac6351efe0dbaa883a961fdfc5974e13084ccaa7f
+
   # Analytics
   # google_analytics:
   #   enabled: true
