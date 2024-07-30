@@ -1,0 +1,44 @@
+{
+    "enabled": true,
+    "details": {
+        "subtitle": "Full-stack Engineer | Data Scientist",
+        "img": {
+            "src": "/assets/images/profile.jpeg",
+            "alt": "Ian Effendi, as Master of Ceremonies at 34th Annual Expressions of Martin Luther King's Legacy."
+        },
+        "content": "Details about me."
+    },
+    "resume": {
+        "url": "docs/20240726.resume--effendi-ian.pdf",
+        "alt": "Resume"
+    },
+    "skills": {
+        "enabled": true,
+        "list": [
+            { "name": "PHP", "url": "https://www.php.net/" },
+            { "name": "TypeScript", "url": "https://www.typescriptlang.org/" },
+            { "name": "C#", "url": "https://learn.microsoft.com/en-us/dotnet/csharp/" },
+            { "name": "Python", "url": "https://www.python.org/" },
+            { "name": "R", "url": "https://www.r-project.org/" },
+            { "name": "C++", "url": "https://cplusplus.com/" },
+            { "name": "GLSL", "url": "https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language" }
+        ]
+    },
+    "tools": {
+        "enabled": true,
+        "list": [
+            { "name": "Laravel", "url": "https://laravel.com/" },
+            { "name": "Node.js", "url": "https://nodejs.org/en" },
+            { "name": "Vue.js", "url": "https://vuejs.org/" },
+            { "name": "Three.js", "url": "https://threejs.org/" },
+            { "name": "React", "url": "https://react.dev/" },
+            { "name": "MySQL", "url": "https://www.mysql.com/" },
+            { "name": "Redis Stack", "url": "https://redis.io/about/about-stack/" },
+            { "name": "MongoDB", "url": "https://www.mongodb.com/" },
+            { "name": "Unity3D", "url": "https://unity.com/" },
+            { "name": "Godot", "url": "https://godotengine.org/" },
+            { "name": "Apache Spark", "url": "https://spark.apache.org/" },
+            { "name": "ASP.NET Core", "url": "https://dotnet.microsoft.com/en-us/apps/aspnet" }
+        ]
+    }
+}
