@@ -46,7 +46,7 @@ Instead, I went with the legacy approach: build freeCodeCamp locally using Mongo
 
 ![Screenshot of the forked repository under my account.](/assets/images/posts/bugfix/fcc_fork.png)
 
-This part was easy; you can find my fork [here](https://github.com/rimij405/freeCodeCamp).
+This part was easy; you can find my fork [here](https://github.com/effendiian/freeCodeCamp).
 
 ### Preparing the Development Environment ###
 

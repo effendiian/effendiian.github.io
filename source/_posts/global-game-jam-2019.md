@@ -12,6 +12,11 @@ tags:
 - mental health
 photos:
 - /assets/images/posts/ggj-2019/hero-image.png
+project:
+  title: "Global Game Jam 2019 Entry"
+  url: "https://github.com/effendiian/ggj19-gjaci-home"
+  img: 
+    src: "/assets/images/posts/ggj-2019/hero-image.png"
 ---
 
 # [Global Game Jam 2019](https://globalgamejam.org/news/time-go-home-ggj19-roundup) #
@@ -73,7 +78,7 @@ During this game jam I worked with these technologies: `Blender (Open Source)`, 
 
 ### A Look at the Team ###
 
-Our team name was created by a collection of our initials: '[*GJACI Games*](https://rimij405.github.io/ggj19-gjaci-home/)'.
+Our team name was created by a collection of our initials: '[*GJACI Games*](https://effendiian.github.io/ggj19-gjaci-home/)'.
 
 ![Logo for our group.](/assets/images/posts/ggj-2019/logo.png)
 
@@ -91,8 +96,8 @@ Our team name was created by a collection of our initials: '[*GJACI Games*](http
 
 #### Programmer #####
 
-[Ian Effendi (effendiian)](https://github.com/rimij405)
-> I was the primary programmer for this game. I worked to get everyone's art assets into Unity's engine and troubleshooted errors that came up along the way. I also created our project's [blog](https://rimij405.github.io/ggj19-gjaci-home/) using Hexo!
+[Ian Effendi (effendiian)](https://github.com/effendiian)
+> I was the primary programmer for this game. I worked to get everyone's art assets into Unity's engine and troubleshooted errors that came up along the way. I also created our project's [blog](https://effendiian.github.io/ggj19-gjaci-home/) using Hexo!
 
 #### Graphic Artist ####
 
@@ -124,4 +129,4 @@ I'm looking forward to revisiting some of my older game projects with this new e
 
 [Global Game Jam Submission](https://globalgamejam.org/2019/games/letting-go-working-title).
 
-[GitHub Repository](https://github.com/rimij405/ggj19-gjaci-home).
+[GitHub Repository](https://github.com/effendiian/ggj19-gjaci-home).

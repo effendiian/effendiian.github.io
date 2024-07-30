@@ -12,6 +12,11 @@ tags:
 - mental health
 photos:
 - /assets/images/posts/brickhack-v/brickhackv.png
+project:
+  title: "BrickHack V"
+  url: "https://devpost.com/software/brickhack-v-chefbicc"
+  img: 
+    src: "/assets/images/posts/brickhack-v/brickhackv.png"
 ---
 
 # [BrickHack V](https://brickhackv.devpost.com/) #
@@ -80,7 +85,7 @@ Claire Chen
 
 Ian Effendi
 { [DevPost](https://devpost.com/rimij405)
-[Portfolio](https://rimij405.github.io/) }
+[Portfolio](https://effendiian.github.io/) }
 > I worked on the REST API (powered by an Express.JS server) that powers the application's tracking abilities. I created controllers, models, and routes, using a mongoose module to handle connecting to MongoDB.
 
 Henry Farr
@@ -138,4 +143,4 @@ Encouraging developers to build upon the framework we've laid out is a great sta
 
 [DevPost Submission](https://devpost.com/software/brickhack-v-chefbicc)
 
-[GitHub Repository](https://github.com/rimij405/brickhack-v-chefbicc)
+[GitHub Repository](https://github.com/effendiian/brickhack-v-chefbicc)

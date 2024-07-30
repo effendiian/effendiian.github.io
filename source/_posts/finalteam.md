@@ -11,6 +11,9 @@ categories:
   - - blog
     - hfoss
 date: 2019-04-2 01:52:05
+project:
+  title: "SugarLabs: Baggage Claim"
+  url: "https://github.com/effendiian/hfoss-final-2019"
 ---
 
 # Sugarlabs Activity - Team Proposal #
@@ -129,7 +132,7 @@ A more detailed timeline can be found below.
 
 ## Division of Labor ##
 
-Nic and Ian have already worked together to get the [repository up and running](https://github.com/rimij405/hfoss-final-2019). Ian has started to look at PyGame. The original plan to have three individual mini-games was revisited after this length process. Instead, the team has decided to go with two scenarios. Whomever is unassigned to either of those two main scenarios is responsible for building the thematic connection between the two of mini-games and working on getting our game to play nice with the Sugar environment.
+Nic and Ian have already worked together to get the [repository up and running](https://github.com/effendiian/hfoss-final-2019). Ian has started to look at PyGame. The original plan to have three individual mini-games was revisited after this length process. Instead, the team has decided to go with two scenarios. Whomever is unassigned to either of those two main scenarios is responsible for building the thematic connection between the two of mini-games and working on getting our game to play nice with the Sugar environment.
 
 Ian created the timeline below in order to provide more context to what we expect to accomplish. After proposals are submitted and approved, we'll be able to tackle these in a consistent fashion. Prior to the next immediate milestone, our group seeks to be more specific and intentional behind the design of our mini-games.
 
