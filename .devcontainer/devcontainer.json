@@ -35,7 +35,11 @@
 				"vivaxy.vscode-conventional-commits",
 				"pshaddel.conventional-branch",
 				"mhutchie.git-graph",
-				"GitHub.vscode-pull-request-github"
+				"GitHub.vscode-pull-request-github",
+				"stkb.rewrap",
+				"DigitalBrainstem.javascript-ejs-support",
+				"tomoki1207.pdf",
+				"DavidAnson.vscode-markdownlint"
 			]
 		}
 	}
