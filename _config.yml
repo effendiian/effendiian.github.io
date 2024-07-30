@@ -128,26 +128,16 @@ theme_config:
   nav:
     home: /
     about: /about/
-    projects: https://github.com/effendiian
+    projects: /projects/
     articles: /archives/
-    Tags: /tags/
-    Categories: /categories/
+    tags: /tags/
+    categories: /categories/
     search: /search/
-
-  # Social Media
-  social_links:
-    - icon: github
-      label: "@effendiian"
-      link: https://github.com/effendiian
 
   # Copyright
   copyright:
     start_year: 2018
     end_year: 2024
-
-  # Gravatar
-  gravatar:
-    email: effendiian@gmail.com
 
   # Analytics
   # google_analytics:
