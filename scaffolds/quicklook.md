@@ -6,7 +6,7 @@ categories:
 tags:
  - quicklook
 photos:
- - /assets/images/banners/quicklook_cover.png
+ - /assets/images/banners/quicklook_cover.jpg
 ---
 
 <!-- [Name of the Software](#link-to-the-software) is software that is used to... In this quicklook, we'll be glimpsing its use as/in... -->

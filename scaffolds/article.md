@@ -6,8 +6,7 @@ categories:
 tags:
  - subject
 photos:
- - https://api.api-ninjas.com/v1/randomimage?category=nature
-#  - /assets/images/banners/article_cover.png
+ - /assets/images/banners/article_cover.jpg
 ---
 
 <!-- {{ title }} explores ... -->

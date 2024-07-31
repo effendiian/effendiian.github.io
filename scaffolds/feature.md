@@ -7,7 +7,7 @@ tags:
  - feature
  - pull request
 photos:
- - /assets/images/banners/feature_cover.png
+ - /assets/images/banners/feature_cover.jpg
 ---
 
 <!-- This post summarizes the contributions suggested in this pull request... The work should resolve the issues laid forth by Issue \#123. -->

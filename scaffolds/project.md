@@ -6,7 +6,7 @@ categories:
 tags:
  - project
 photos:
- - /assets/images/banners/project_cover.png
+ - /assets/images/banners/project_cover.jpg
 ---
 
 <!-- Tagline for the project goes here. -->
