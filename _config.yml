@@ -124,6 +124,11 @@ theme_config:
   # Color Scheme
   colorscheme: dark
 
+  # License
+  license:
+    licenseType: by
+    licenseIconSize: small
+
   # Navigation
   nav:
     home: /
