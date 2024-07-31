@@ -1,15 +1,22 @@
 ---
 title: It Started With a Bang!
-date: 2019-01-21 01:06:33
+date: 2019-01-20 01:06:33
 categories: 
 - [blog, hfoss]
 tags:
 - open-source
 - class
 - hexo
+photos:
+ - "/assets/images/projects/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
+project:
+  title: "Portfolio"
+  description: "Created this JAMStack blog and portfolio site with custom Hexo plugins."
+  prompt: "GitHub"
+  url: "https://github.com/effendiian/effendiian.github.io"
+  img:
+    src: "/assets/images/projects/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
 ---
-
-# It Started With a BANG #
 
 At least, I wish creating a personal website was as cinematic and bombastic as a Michael Bay-directed Transformers film. Alas, as with most projects, it takes a little bit of research to know what we're getting into. Let's take a look at how this site was made, shall we?
 

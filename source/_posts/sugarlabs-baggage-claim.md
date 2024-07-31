@@ -14,6 +14,8 @@ photos:
 - /assets/images/projects/sugarlabs_preview.png
 project:
   title: "SugarLabs: Baggage Claim"
+  description: "Design project for educational platform SugarLabs."
+  prompt: "GitHub"
   url: "https://github.com/effendiian/hfoss-final-2019"
   img:
     src: "/assets/images/projects/sugarlabs_preview.png"

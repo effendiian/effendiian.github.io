@@ -14,6 +14,8 @@ photos:
 - /assets/images/posts/ggj-2019/hero-image.png
 project:
   title: "Global Game Jam 2019 Entry"
+  description: "Digital diaorama of a 3D space."
+  prompt: "GitHub"
   url: "https://github.com/effendiian/ggj19-gjaci-home"
   img: 
     src: "/assets/images/posts/ggj-2019/hero-image.png"

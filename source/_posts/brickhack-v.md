@@ -14,6 +14,8 @@ photos:
 - /assets/images/posts/brickhack-v/brickhackv.png
 project:
   title: "BrickHack V: Mood Swing"
+  description: "NodeJS + React Hackathon Submission"
+  prompt: "DevPost Entry"
   url: "https://devpost.com/software/brickhack-v-chefbicc"
   img: 
     src: "/assets/images/posts/brickhack-v/brickhackv.png"
