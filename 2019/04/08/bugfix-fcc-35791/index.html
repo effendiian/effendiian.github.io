@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Squashing Bugs - freeCodeCamp Issue #35791I was in the middle of responding to issue #35751 for freeCodeCamp, when I found a typo in the local development setup guides! I was writing up the other bugf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)">
+<meta property="og:url" content="http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/index.html">
+<meta property="og:site_name" content="@effendiian">
+<meta property="og:description" content="Squashing Bugs - freeCodeCamp Issue #35791I was in the middle of responding to issue #35751 for freeCodeCamp, when I found a typo in the local development setup guides! I was writing up the other bugf">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://effendiian.github.io/assets/images/posts/bugfix/fcc_banner2.png">
+<meta property="article:published_time" content="2019-04-08T01:14:25.000Z">
+<meta property="article:modified_time" content="2024-07-30T12:09:05.580Z">
+<meta property="article:author" content="Ian Effendi">
+<meta property="article:tag" content="open-source">
+<meta property="article:tag" content="bugfix">
+<meta property="article:tag" content="education">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://effendiian.github.io/assets/images/posts/bugfix/fcc_banner2.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<!--  -->
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2019/04/08/triage-fcc-local-dev-setup/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2019/04/05/triage-docker-on-wsl/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&text=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&is_video=false&description=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)&body=Check out this article: http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&name=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&t=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Squashing-Bugs-freeCodeCamp-Issue-35791"><span class="toc-number">1.</span> <span class="toc-text">Squashing Bugs - freeCodeCamp Issue #35791</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.1.</span> <span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Issue"><span class="toc-number">1.2.</span> <span class="toc-text">The Issue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Squashing-the-Bug"><span class="toc-number">1.3.</span> <span class="toc-text">Squashing the Bug</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-a-Pull-Request"><span class="toc-number">1.4.</span> <span class="toc-text">Creating a Pull Request</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Ian Effendi</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-04-08T01:14:25.000Z" class="dt-published" itemprop="datePublished">2019-04-08</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/hfoss/">hfoss</a> › <a class="category-link" href="/categories/freeCodeCamp/">freeCodeCamp</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/bugfix/" rel="tag">bugfix</a>, <a class="p-category" href="/tags/education/" rel="tag">education</a>, <a class="p-category" href="/tags/open-source/" rel="tag">open-source</a>
+    </div>
+
+
+      
+
+      <span itemprop="license"></span>
+    </div>
+  </header>
+  
+<div class="article-gallery">
+    
+    <a class="gallery-item" href="/assets/images/posts/bugfix/fcc_banner2.png" rel="gallery_clz93bivj0006ypqs5ilfhm7j">
+        <img src="/assets/images/posts/bugfix/fcc_banner2.png" itemprop="image" />
+    </a>
+    
+</div>
+
+
+  <div class="content e-content" itemprop="articleBody">
+    <h1 id="Squashing-Bugs-freeCodeCamp-Issue-35791"><a href="#Squashing-Bugs-freeCodeCamp-Issue-35791" class="headerlink" title="Squashing Bugs - freeCodeCamp Issue #35791"></a>Squashing Bugs - freeCodeCamp Issue #35791</h1><p>I was in the middle of responding to issue <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35751">#35751</a> for <a target="_blank" rel="noopener" href="https://www.freecodecamp.org/">freeCodeCamp</a>, when I found a typo in the local development setup guides! I was writing up the other bugfix report as I churned along, but, wow - I managed to contribute and have my changes accepted for a completely different effort!</p>
+<p>To note, this post is for issue <code>#35791</code> and <strong>not</strong> the very similarly numbered <code>#35751</code>, which I am in the middle of writing another bugfix report for. You’ll see my other report on this site once I finish editing files and performing a spell-check. That draft is sitting on my harddrive, so, even if you end up seeing this first, this is my <em>second</em> magic trick.</p>
+<p>But it’s one that resulted in a successful pull request (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35792">#35792</a>) as well!</p>
+<p><img src="/assets/images/posts/bugfix/fcc_logo.svg" alt="Logo for Free Code Camp."></p>
+<p>The nonprofit’s mission is simple: help <em>campers</em> learn to code. For free. (<em>And this time, it’s free as in pizza <strong>and</strong> free as in libre</em>). I did a brief review on the Free Code Camp code base in preparation for the <a href="/2019/04/09/bugfix-fcc-35751/" title="Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)">other bugfix report here</a>. <a href="/2019/04/04/commarch-fcc/" title="FLOSS in Review: freeCodeCamp">You can also read my FLOSS review post here.</a></p>
+<!-- Read more -->
+
+<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>I was reading over the <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/docs/how-to-setup-freecodecamp-locally.md">local developer setup guide</a> when I came across an innocuous typo. The link to the contributor’s forum hadn’t been updated!</p>
+<p><img src="/assets/images/posts/bugfix/fcc_broken-link.png" alt="Screenshot of the suspect."></p>
+<p>The link goes to <code>https://www.freecodecamp.org/c/contributors</code> when it should be pointing to <code>https://www.freecodecamp.org/forum/c/contributors</code>.</p>
+<h2 id="The-Issue"><a href="#The-Issue" class="headerlink" title="The Issue"></a>The Issue</h2><p>Since I already had read the <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/blob/master/CONTRIBUTING.md">contributor’s guide</a>. I was ready to roll. I went ahead and created a new issue (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35791">#35791</a>). </p>
+<p>I gave information about steps on how to reproduce the error, what I believed the expected outcome should have been, and followed all of the contributor guidelines that they had set out for us. The issue itself was a link that pointed to a non-existent page, causing a 404 error - you can read the mundane details in the <a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35791">issue</a> itself.</p>
+<h2 id="Squashing-the-Bug"><a href="#Squashing-the-Bug" class="headerlink" title="Squashing the Bug"></a>Squashing the Bug</h2><p>Squashing this bug was simple: I had to change the links to point to the correct location.</p>
+<h2 id="Creating-a-Pull-Request"><a href="#Creating-a-Pull-Request" class="headerlink" title="Creating a Pull Request"></a>Creating a Pull Request</h2><p>Once the pull request (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/pull/35792">#35792</a>) was created, it passed the Travis CI build tests, and was accepted by one of the core maintainers for the repository.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull6.png" alt="Screenshot of the issue showing the merged pull request."></p>
+<p>The issue (<a target="_blank" rel="noopener" href="https://github.com/freeCodeCamp/freeCodeCamp/issues/35791">#35791</a>.) thread also reflects that the pull request was accepted.</p>
+<p><img src="/assets/images/posts/bugfix/fcc_pull5.png" alt="Screenshot of the issue showing the merged pull request."></p>
+<p>With that, my first pull request was accepted! All while I was trying to get <a href="/2019/04/09/bugfix-fcc-35751/" title="Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)">another bugfix</a> done.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/projects/">Projects</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/tags/">Tags</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Squashing-Bugs-freeCodeCamp-Issue-35791"><span class="toc-number">1.</span> <span class="toc-text">Squashing Bugs - freeCodeCamp Issue #35791</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.1.</span> <span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Issue"><span class="toc-number">1.2.</span> <span class="toc-text">The Issue</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Squashing-the-Bug"><span class="toc-number">1.3.</span> <span class="toc-text">Squashing the Bug</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Creating-a-Pull-Request"><span class="toc-number">1.4.</span> <span class="toc-text">Creating a Pull Request</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&text=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&is_video=false&description=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)&body=Check out this article: http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&title=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&name=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/&t=Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2024
+    Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+  
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/> 
+   
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" crossorigin="anonymous"></script>
+  
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

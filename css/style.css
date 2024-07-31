@@ -1054,6 +1054,10 @@ body {
     display: none;
   }
 }
+#socials {
+  text-align: center;
+  align-content: center;
+}
 .post-list {
   padding: 0;
 }
@@ -1222,11 +1226,13 @@ article .content .caption {
 }
 @media (min-width: 480px) {
   .article-tag,
-  .article-category {
+  .article-category,
+  .article-project {
     display: inline;
   }
   .article-tag:before,
-  .article-category:before {
+  .article-category:before,
+  .article-project:before {
     content: "|";
   }
 }
@@ -1533,7 +1539,7 @@ article .content .caption {
   flex-flow: column;
   align-content: center;
   align-items: center;
-  background: #2bbc8a;
+  background: #fafafa;
   height: 100%;
   padding: 1em;
   border-radius: 30px;

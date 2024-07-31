@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Waiting for Godot This week I’m working with Godot, a free and open source cross-platform game engine released under the very permissive MIT license. Let’s get to it.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Waiting for Godot">
+<meta property="og:url" content="http://effendiian.github.io/2019/02/05/waiting-for-godot/index.html">
+<meta property="og:site_name" content="@effendiian">
+<meta property="og:description" content="Waiting for Godot This week I’m working with Godot, a free and open source cross-platform game engine released under the very permissive MIT license. Let’s get to it.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://effendiian.github.io/assets/images/posts/waiting-for-godot/editor-live.png">
+<meta property="article:published_time" content="2019-02-05T03:38:25.000Z">
+<meta property="article:modified_time" content="2024-07-30T12:09:05.580Z">
+<meta property="article:author" content="Ian Effendi">
+<meta property="article:tag" content="open-source">
+<meta property="article:tag" content="class">
+<meta property="article:tag" content="documentation">
+<meta property="article:tag" content="game development">
+<meta property="article:tag" content="game engine">
+<meta property="article:tag" content="Godot">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://effendiian.github.io/assets/images/posts/waiting-for-godot/editor-live.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Waiting for Godot</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<!--  -->
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2019/02/17/brickhack-v/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2019/01/30/lit-review-1/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/02/05/waiting-for-godot/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&text=Waiting for Godot"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&is_video=false&description=Waiting for Godot"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Waiting for Godot&body=Check out this article: http://effendiian.github.io/2019/02/05/waiting-for-godot/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&name=Waiting for Godot&description=&lt;h1 id=&#34;Waiting-for-Godot&#34;&gt;&lt;a href=&#34;#Waiting-for-Godot&#34; class=&#34;headerlink&#34; title=&#34;Waiting for Godot&#34;&gt;&lt;/a&gt;Waiting for Godot&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;/assets/images/posts/waiting-for-godot/godot/logo_512px.png&#34; alt=&#34;Godot Logo.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This week I’m working with &lt;a href=&#34;https://godotengine.org/&#34;&gt;Godot&lt;/a&gt;, a free and open source cross-platform game engine released under the very permissive &lt;a href=&#34;https://opensource.org/licenses/MIT&#34;&gt;MIT license&lt;/a&gt;. Let’s get to it.&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/02/05/waiting-for-godot/&t=Waiting for Godot"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Waiting-for-Godot"><span class="toc-number">1.</span> <span class="toc-text">Waiting for Godot</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Game-Engine-I-Waited-For"><span class="toc-number">1.1.</span> <span class="toc-text">The Game Engine I Waited For</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Features"><span class="toc-number">1.2.</span> <span class="toc-text">Features</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Compact"><span class="toc-number">1.2.1.</span> <span class="toc-text">Compact</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#It%E2%80%99s-in-the-Node"><span class="toc-number">1.2.2.</span> <span class="toc-text">It’s in the Node</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Scripting"><span class="toc-number">1.2.3.</span> <span class="toc-text">Scripting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Animation"><span class="toc-number">1.2.4.</span> <span class="toc-text">Animation</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Godot-vs-Unity"><span class="toc-number">1.3.</span> <span class="toc-text">Godot vs. Unity</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#No-Nest-To-Call-Home"><span class="toc-number">1.3.1.</span> <span class="toc-text">No Nest To Call Home</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pixel-Perfect-2D"><span class="toc-number">1.3.2.</span> <span class="toc-text">Pixel Perfect 2D</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unity-is-Proprietary"><span class="toc-number">1.3.3.</span> <span class="toc-text">Unity is Proprietary</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Godot-vs-Cocos2d-x"><span class="toc-number">1.4.</span> <span class="toc-text">Godot vs. Cocos2d-x</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ease-of-Use"><span class="toc-number">1.5.</span> <span class="toc-text">Ease of Use</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Open-Source-Diverse-Community"><span class="toc-number">1.6.</span> <span class="toc-text">Open Source &amp; Diverse Community</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Support-Development"><span class="toc-number">1.7.</span> <span class="toc-text">Support Development</span></a></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Waiting for Godot
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Ian Effendi</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2019-02-05T03:38:25.000Z" class="dt-published" itemprop="datePublished">2019-02-05</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/hfoss/">hfoss</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/Godot/" rel="tag">Godot</a>, <a class="p-category" href="/tags/class/" rel="tag">class</a>, <a class="p-category" href="/tags/documentation/" rel="tag">documentation</a>, <a class="p-category" href="/tags/game-development/" rel="tag">game development</a>, <a class="p-category" href="/tags/game-engine/" rel="tag">game engine</a>, <a class="p-category" href="/tags/open-source/" rel="tag">open-source</a>
+    </div>
+
+
+      
+
+      <span itemprop="license"></span>
+    </div>
+  </header>
+  
+<div class="article-gallery">
+    
+    <a class="gallery-item" href="/assets/images/posts/waiting-for-godot/editor-live.png" rel="gallery_clz93biw8008eypqshboua9vr">
+        <img src="/assets/images/posts/waiting-for-godot/editor-live.png" itemprop="image" />
+    </a>
+    
+</div>
+
+
+  <div class="content e-content" itemprop="articleBody">
+    <h1 id="Waiting-for-Godot"><a href="#Waiting-for-Godot" class="headerlink" title="Waiting for Godot"></a>Waiting for Godot</h1><p><img src="/assets/images/posts/waiting-for-godot/godot/logo_512px.png" alt="Godot Logo."></p>
+<p>This week I’m working with <a target="_blank" rel="noopener" href="https://godotengine.org/">Godot</a>, a free and open source cross-platform game engine released under the very permissive <a target="_blank" rel="noopener" href="https://opensource.org/licenses/MIT">MIT license</a>. Let’s get to it.</p>
+<span id="more"></span>
+
+<h2 id="The-Game-Engine-I-Waited-For"><a href="#The-Game-Engine-I-Waited-For" class="headerlink" title="The Game Engine I Waited For"></a>The Game Engine I Waited For</h2><p>The Godot homepage has this neat little tagline:</p>
+<blockquote>
+<p><strong>The Game Engine You Waited For</strong></p>
+</blockquote>
+<p>The joke? <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Waiting_for_Godot"><em>Waiting for Godot</em></a> is a play by <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Samuel_Beckett">Samuel Beckett</a>, in which the main characters wait for the arrival of someone named Godot … who never arrives. Although it was originally written in French, Beckett’s English language version of the material was voted, “the most significant English language play of the 20th century,” in a 1990 poll conducted by the British Royal National Theatre.</p>
+<p>Godot was formed in 2007 by Juan ‘reduz’ Linietsky and Ariel ‘punto’ Manzur. According to Linietsky, the name <em>Godot</em> was chosen to represent their never-ending wish of adding new features to the engine, always pushing off an exhaustive product. It wasn’t until February of 2014 - seven years later - that the source code would be published on GitHub and it wasn’t until the end of that year for Godot to reach version 1.0 - it’s first stable release.</p>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><p>At the time of writing this, Godot’s last stable release (v.3.0.6) was released in July of 2018 - and development is on-going. The engine itself runs on several operating systems, including <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a>, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/MacOS">macOS</a>, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Linux">Linux</a>, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Berkeley_Software_Distribution">BSD</a>, and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Haiku_(operating_system)">Haiku</a>. (<em>Fun fact about Haiku - it’s an open source operating system supported by Haiku, Inc., a non-profit organization based in Rochester, New York, founded by <a target="_blank" rel="noopener" href="https://www.haiku-os.org/blog/koki/2009-11-28_history_channel_2003_interview_michael_phipps/">Michael Phipps</a>, Computer Science graduate of Rochester Institute of Technology, Class of ‘97</em>). Games made with Godot can target desktop, mobile, and web platforms, using Godot’s export template system. It’s easy to create custom builds as well, if the existing templates don’t cut it.</p>
+<h3 id="Compact"><a href="#Compact" class="headerlink" title="Compact"></a>Compact</h3><p>Godot is a small engine - roughly 20 MB in size - and is very easy to compile. It comes with a built-in debugger, profiler (with graph plotting and time seeking), that allows for projects to be modified, even while they’re running. Changes made while live are persistent - a design choice that some engines don’t have.</p>
+<h3 id="It’s-in-the-Node"><a href="#It’s-in-the-Node" class="headerlink" title="It’s in the Node"></a>It’s in the Node</h3><p>Godot adpots a Scene- and Node-based hiearchy as its approach to game development. Everything in Godot is a Node and nodes can be (infinitely) nested. The visual editor that comes with Godot makes it friendly, inviting, and easy-to-use for creators at any level of the game development pipeline.</p>
+<p>Godot’s configuration and project files are version control friendly - feel free to make liberal use of your diff command. Godot also utilizes a custom scripting language (GDScript) that was written explicitly for the engine - GDScript’s syntax is also supported by GitHub, so it enjoys some of the same privileges of its older cousins.</p>
+<h3 id="Scripting"><a href="#Scripting" class="headerlink" title="Scripting"></a>Scripting</h3><p>While GDScript is a Python-like language meant explicitly for Godot, it’s not the only one available. The latest stable release has full C# 7.0 support (using Mono), support for a visual scripting system using blocks and connectors, and full native C++ support without the need to recompile the engine (through the use of a core-module dynamic). The GDNative aspect of the project exposes the engine’s native C symbol API that allows developers to create and utilize bindings to other languages if they so wish - bindings already exist for Python, Nim, and D, among other languages.</p>
+<h3 id="Animation"><a href="#Animation" class="headerlink" title="Animation"></a>Animation</h3><p>Everything in Godot was built with animation in mind: from bones and objects to function calls themselves, everything can be tweened. </p>
+<h2 id="Godot-vs-Unity"><a href="#Godot-vs-Unity" class="headerlink" title="Godot vs. Unity"></a>Godot vs. Unity</h2><p><img src="/assets/images/posts/waiting-for-godot/editor.png" alt="Picture of editor."></p>
+<p>Godot supports both 2D and 3D game development. While this is what draws the largest comparison to the <a target="_blank" rel="noopener" href="https://unity3d.com/">Unity3D</a> game engine, there are three crucial differences. By all means, Godot is not a perfect engine, but, knowing where it excels can help you make a decision about which engine to choose.</p>
+<h3 id="No-Nest-To-Call-Home"><a href="#No-Nest-To-Call-Home" class="headerlink" title="No Nest To Call Home"></a>No Nest To Call Home</h3><p>Unity doesn’t allow you to use nested prefabs; all prefab instances will overwrite internal prefabs once ‘nested’. While Unity encourages composability over inheritance, it seems like a missed area to not allow prefabs to be components and children of other prefabs. Godot’s node-based system gets around this issue.</p>
+<h3 id="Pixel-Perfect-2D"><a href="#Pixel-Perfect-2D" class="headerlink" title="Pixel Perfect 2D"></a>Pixel Perfect 2D</h3><p>Unity3D developers can create 2D games, but, it often comes with the overhead of running a 3D game engine on top of that. Godot’s 2D engine is fully dedicated 2D and is not just a repurposed 3D approximation of 2D. This advantage allows developers to create pixel-perfect gameplay, utilize 2D lights and normal maps, and animate 2D rigs with skeletons and IK. Unity can get the job done, but, your mileage may vary.</p>
+<h3 id="Unity-is-Proprietary"><a href="#Unity-is-Proprietary" class="headerlink" title="Unity is Proprietary"></a>Unity is Proprietary</h3><p>Unity3D is free as in free pizza. It’s not an open source game engine, unlike Godot, so when you want to expand a particular feature set, you’re stuck waiting for the Unity team to get around to fixing it.</p>
+<h2 id="Godot-vs-Cocos2d-x"><a href="#Godot-vs-Cocos2d-x" class="headerlink" title="Godot vs. Cocos2d-x"></a>Godot vs. Cocos2d-x</h2><p><img src="/assets/images/posts/waiting-for-godot/cocos-creator.png" alt="CocosCreator Logo."></p>
+<p>If you’re looking for an alternative to Godot, <a target="_blank" rel="noopener" href="https://cocos2d-x.org/">Cocos2d-x based editor CocosCreator</a> is a great open source engine with its own community supporting it.</p>
+<h2 id="Ease-of-Use"><a href="#Ease-of-Use" class="headerlink" title="Ease of Use"></a>Ease of Use</h2><p><img src="/assets/images/posts/waiting-for-godot/chrome-trip.gif" alt="Chrome Trip by @enthus1ast"></p>
+<p><em><a target="_blank" rel="noopener" href="https://code0.itch.io/chrome-trip">Chrome Trip by @enthus1ast</a>. A downloadable, open source multiplayer game created with Godot for the GitHubGameOff 2017 jam.</em></p>
+<p>Godot is special because of its ease of use. Ariel Manzur, co-founder of OKAM Studios and Godot, led a team of industry newcomers in the design of adventure game <em>Dog Mendonça &amp; Pizzaboy</em>. Godot, in some ways, was built by its founders to help express the desire for a more visual approach to game development, without necessarily sacrificing the power that comes with engines like <a target="_blank" rel="noopener" href="https://unity3d.com/">Unity3D</a> and <a target="_blank" rel="noopener" href="https://www.unrealengine.com/en-US/what-is-unreal-engine-4">Unreal</a>.</p>
+<p>Teachers at a West Virginia high school have used Godot as a way to address the state’s 2016 <a target="_blank" rel="noopener" href="http://careertech.k12.wv.us/OCTIWebsiteRevisions/16Clusters/InformationTechnologyMainPage.html">coding, app, and game design curriculum</a>.  There’s plenty of room for students to learn game development while introducing them to the concept of free (as in free speech) software.</p>
+<h2 id="Open-Source-Diverse-Community"><a href="#Open-Source-Diverse-Community" class="headerlink" title="Open Source &amp; Diverse Community"></a>Open Source &amp; Diverse Community</h2><p>There is no question behind Godot’s status as free, open source software. On November 4th, 2015, Godot joined the <a target="_blank" rel="noopener" href="https://sfconservancy.org/">Software Freedom Conservacy</a>. On June 22nd, 2016, Godot received a $20,000 Mozilla Open Source Support (MOSS) “Mission Partners” award to incorporate Web Sockets, WebAssembly, and WebGL support. It has the acknowledgement of the big names in open source, and, the community is very active. There are currently 4,045 open and 11,267 closed issues on the <a target="_blank" rel="noopener" href="https://github.com/godotengine/godot/issues?q=is:issue+is:open+sort:updated-desc">upstream repository</a>. The project has been <a target="_blank" rel="noopener" href="https://github.com/godotengine/godot/network/members">forked more than 3,800 times</a> and there are currently <a target="_blank" rel="noopener" href="https://github.com/godotengine/godot/pulls?q=is:pr+is:open+sort:updated-desc">263 open pull requests</a>. </p>
+<p>It is a thriving, vibrant community. This year, the first ever <em>Godot Sprint</em> was held in Brussels, two days before <a target="_blank" rel="noopener" href="https://fosdem.org/2019/">FOSDEM 2019</a> and <a target="_blank" rel="noopener" href="https://godotengine.org/events/#godotcon">GodotCon 2019</a>. Contributors were able to meet in order to encourage completion of C++ engine features, writing of documentation, and creation of teaching materials for new developers. These are signs of a strong open source project that will be a mainstay for years.</p>
+<p>There are several ways to get involved with the community:</p>
+<ul>
+<li>IRC <a target="_blank" rel="noopener" href="https://webchat.freenode.net/?channels=#godotengine">freenode.net#godotengine</a>.</li>
+<li><a target="_blank" rel="noopener" href="https://discord.gg/zH7NUgz">Discord</a>.</li>
+<li><a target="_blank" rel="noopener" href="https://matrix.to/#/#godotengine:matrix.org">Matrix</a>.</li>
+<li><a target="_blank" rel="noopener" href="https://www.facebook.com/groups/godotengine/">Facebook</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/godot">Reddit</a></li>
+<li><a target="_blank" rel="noopener" href="https://twitter.com/godotengine">Twitter</a></li>
+<li><a target="_blank" rel="noopener" href="https://steamcommunity.com/app/404790">Steam</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/c/GodotEngineOfficial">YouTube</a></li>
+<li><a target="_blank" rel="noopener" href="http://godotdevelopers.org/">Godot Forum</a></li>
+</ul>
+<h2 id="Support-Development"><a href="#Support-Development" class="headerlink" title="Support Development"></a>Support Development</h2><p>If you aren’t interested in contributing to the Godot project as a developer, consider donating monthly via <a target="_blank" rel="noopener" href="https://www.patreon.com/godotengine">Patreon</a> or directly via <a target="_blank" rel="noopener" href="https://godotengine.org/donate">Paypal</a>. Godot’s donations are processed by the Software Freedom Conservancy and used to hire developers based on contracts that are made transparent to all supporters.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/projects/">Projects</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/tags/">Tags</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Waiting-for-Godot"><span class="toc-number">1.</span> <span class="toc-text">Waiting for Godot</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Game-Engine-I-Waited-For"><span class="toc-number">1.1.</span> <span class="toc-text">The Game Engine I Waited For</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Features"><span class="toc-number">1.2.</span> <span class="toc-text">Features</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Compact"><span class="toc-number">1.2.1.</span> <span class="toc-text">Compact</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#It%E2%80%99s-in-the-Node"><span class="toc-number">1.2.2.</span> <span class="toc-text">It’s in the Node</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Scripting"><span class="toc-number">1.2.3.</span> <span class="toc-text">Scripting</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Animation"><span class="toc-number">1.2.4.</span> <span class="toc-text">Animation</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Godot-vs-Unity"><span class="toc-number">1.3.</span> <span class="toc-text">Godot vs. Unity</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#No-Nest-To-Call-Home"><span class="toc-number">1.3.1.</span> <span class="toc-text">No Nest To Call Home</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pixel-Perfect-2D"><span class="toc-number">1.3.2.</span> <span class="toc-text">Pixel Perfect 2D</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Unity-is-Proprietary"><span class="toc-number">1.3.3.</span> <span class="toc-text">Unity is Proprietary</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Godot-vs-Cocos2d-x"><span class="toc-number">1.4.</span> <span class="toc-text">Godot vs. Cocos2d-x</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ease-of-Use"><span class="toc-number">1.5.</span> <span class="toc-text">Ease of Use</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Open-Source-Diverse-Community"><span class="toc-number">1.6.</span> <span class="toc-text">Open Source &amp; Diverse Community</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Support-Development"><span class="toc-number">1.7.</span> <span class="toc-text">Support Development</span></a></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2019/02/05/waiting-for-godot/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&text=Waiting for Godot"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&is_video=false&description=Waiting for Godot"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Waiting for Godot&body=Check out this article: http://effendiian.github.io/2019/02/05/waiting-for-godot/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&title=Waiting for Godot"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2019/02/05/waiting-for-godot/&name=Waiting for Godot&description=&lt;h1 id=&#34;Waiting-for-Godot&#34;&gt;&lt;a href=&#34;#Waiting-for-Godot&#34; class=&#34;headerlink&#34; title=&#34;Waiting for Godot&#34;&gt;&lt;/a&gt;Waiting for Godot&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;/assets/images/posts/waiting-for-godot/godot/logo_512px.png&#34; alt=&#34;Godot Logo.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This week I’m working with &lt;a href=&#34;https://godotengine.org/&#34;&gt;Godot&lt;/a&gt;, a free and open source cross-platform game engine released under the very permissive &lt;a href=&#34;https://opensource.org/licenses/MIT&#34;&gt;MIT license&lt;/a&gt;. Let’s get to it.&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2019/02/05/waiting-for-godot/&t=Waiting for Godot"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2024
+    Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+  
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/> 
+   
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" crossorigin="anonymous"></script>
+  
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

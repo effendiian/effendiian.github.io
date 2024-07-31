@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/</loc>
+    <loc>http://effendiian.github.io/2019/01/20/hello-world/</loc>
+    
+    <lastmod>2024-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/2019/01/30/global-game-jam-2019/</loc>
+    
+    <lastmod>2024-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/2019/04/02/sugarlabs-baggage-claim/</loc>
     
     <lastmod>2024-07-30</lastmod>
     
@@ -20,6 +38,42 @@
   </url>
   
   <url>
+    <loc>http://effendiian.github.io/about/index.html</loc>
+    
+    <lastmod>2024-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/</loc>
+    
+    <lastmod>2024-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/</loc>
+    
+    <lastmod>2024-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/</loc>
+    
+    <lastmod>2024-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://effendiian.github.io/2019/04/04/commarch-fcc/</loc>
     
     <lastmod>2024-07-30</lastmod>
@@ -29,25 +83,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/04/07/bugfix-fcc-35791/</loc>
-    
-    <lastmod>2024-07-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://effendiian.github.io/2019/03/21/commarchreport/</loc>
-    
-    <lastmod>2024-07-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/2019/01/30/global-game-jam-2019/</loc>
     
     <lastmod>2024-07-30</lastmod>
     
@@ -74,7 +110,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/03/25/quicklook-sgos/</loc>
+    <loc>http://effendiian.github.io/2019/04/03/quicklook-scoop/</loc>
     
     <lastmod>2024-07-30</lastmod>
     
@@ -83,7 +119,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/04/02/quicklook-scoop/</loc>
+    <loc>http://effendiian.github.io/2019/03/26/quicklook-sgos/</loc>
     
     <lastmod>2024-07-30</lastmod>
     
@@ -101,25 +137,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/</loc>
-    
-    <lastmod>2024-07-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/2019/02/04/waiting-for-godot/</loc>
-    
-    <lastmod>2024-07-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/about/index.html</loc>
+    <loc>http://effendiian.github.io/2019/02/05/waiting-for-godot/</loc>
     
     <lastmod>2024-07-30</lastmod>
     
@@ -164,7 +182,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/03/19/commarchteam/</loc>
+    <loc>http://effendiian.github.io/2019/03/20/commarchteam/</loc>
     
     <lastmod>2020-04-23</lastmod>
     
@@ -191,24 +209,6 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/04/01/finalteam/</loc>
-    
-    <lastmod>2020-04-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/2019/01/20/hello-world/</loc>
-    
-    <lastmod>2020-04-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://effendiian.github.io/2019/02/17/lit-review-2/</loc>
     
     <lastmod>2020-04-23</lastmod>
@@ -218,7 +218,16 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/03/19/lit-review-3/</loc>
+    <loc>http://effendiian.github.io/2019/03/20/lit-review-3/</loc>
+    
+    <lastmod>2020-04-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/2019/01/22/next-steps/</loc>
     
     <lastmod>2020-04-23</lastmod>
     
@@ -228,15 +237,6 @@
   
   <url>
     <loc>http://effendiian.github.io/2019/04/03/quicklook-openal/</loc>
-    
-    <lastmod>2020-04-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/2019/01/21/next-steps/</loc>
     
     <lastmod>2020-04-23</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/04/22/quiz-2/</loc>
+    <loc>http://effendiian.github.io/2019/03/20/reading-oss-arch/</loc>
     
     <lastmod>2020-04-23</lastmod>
     
@@ -272,7 +272,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/03/20/reading-oss-arch/</loc>
+    <loc>http://effendiian.github.io/2019/04/22/quiz-2/</loc>
     
     <lastmod>2020-04-23</lastmod>
     
@@ -292,7 +292,7 @@
 
   <url>
     <loc>http://effendiian.github.io/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -300,343 +300,343 @@
   
   <url>
     <loc>http://effendiian.github.io/tags/open-source/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/hackathon/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/meetup/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/nodeJS/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/react/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/mental-health/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/bugfix/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/education/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/class/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/architecture/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/documentation/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/analysis/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/data-science/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/python/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/python3/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/culture/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/discourse/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/community/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/Sugarlabs/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/hexo/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/bugs/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/issues/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/reading/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/personal/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/tutorial/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/ssh/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/authentication/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/math/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/tags/audio/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <loc>http://effendiian.github.io/tags/personal/</loc>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/tags/game-development/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <loc>http://effendiian.github.io/tags/tutorial/</loc>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/tags/quicklook/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <loc>http://effendiian.github.io/tags/ssh/</loc>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/tags/github/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/RIT/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/Student-Government/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/university/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/shell/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/powershell/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/scoop/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/unlicense/</loc>
-    <lastmod>2024-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/Windows/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <loc>http://effendiian.github.io/tags/authentication/</loc>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/js/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/audio/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/game-development/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/quicklook/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/shell/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/powershell/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/scoop/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/unlicense/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/Windows/</loc>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/graphics/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/film/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/imaging/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/github/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/RIT/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/Student-Government/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/university/</loc>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/quiz-hfoss/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/Sugarlabs/</loc>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/docker/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/triage/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/game-engine/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/tags/Godot/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -645,35 +645,35 @@
   
   <url>
     <loc>http://effendiian.github.io/categories/blog/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/categories/blog/hfoss/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/categories/blog/data-science/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/categories/freeCodeCamp/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://effendiian.github.io/categories/blog/cybersecurity/</loc>
-    <lastmod>2024-07-30</lastmod>
+    <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
