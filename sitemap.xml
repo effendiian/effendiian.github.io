@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/01/22/next-steps/</loc>
+    <loc>http://effendiian.github.io/2019/04/03/quicklook-openal/</loc>
     
     <lastmod>2020-04-23</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/04/03/quicklook-openal/</loc>
+    <loc>http://effendiian.github.io/2019/01/22/next-steps/</loc>
     
     <lastmod>2020-04-23</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/03/20/reading-oss-arch/</loc>
+    <loc>http://effendiian.github.io/2019/04/22/quiz-2/</loc>
     
     <lastmod>2020-04-23</lastmod>
     
@@ -272,7 +272,7 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/2019/04/22/quiz-2/</loc>
+    <loc>http://effendiian.github.io/2019/03/20/reading-oss-arch/</loc>
     
     <lastmod>2020-04-23</lastmod>
     
@@ -488,13 +488,6 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/tags/js/</loc>
-    <lastmod>2024-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://effendiian.github.io/tags/audio/</loc>
     <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -510,6 +503,13 @@
   
   <url>
     <loc>http://effendiian.github.io/tags/quicklook/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/js/</loc>
     <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -551,27 +551,6 @@
   </url>
   
   <url>
-    <loc>http://effendiian.github.io/tags/graphics/</loc>
-    <lastmod>2024-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/film/</loc>
-    <lastmod>2024-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://effendiian.github.io/tags/imaging/</loc>
-    <lastmod>2024-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://effendiian.github.io/tags/github/</loc>
     <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -594,6 +573,27 @@
   
   <url>
     <loc>http://effendiian.github.io/tags/university/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/graphics/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/film/</loc>
+    <lastmod>2024-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://effendiian.github.io/tags/imaging/</loc>
     <lastmod>2024-07-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
