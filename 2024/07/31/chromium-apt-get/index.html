@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Put together a quick Dev Container feature that I’m hoping to share with the community.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Feature: chromium-apt-get Issue 626 (PR 627)">
+<meta property="og:url" content="http://effendiian.github.io/2024/07/31/chromium-apt-get/index.html">
+<meta property="og:site_name" content="@effendiian">
+<meta property="og:description" content="Put together a quick Dev Container feature that I’m hoping to share with the community.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://effendiian.github.io/assets/images/banners/feature_cover.jpg">
+<meta property="article:published_time" content="2024-07-31T03:32:26.000Z">
+<meta property="article:modified_time" content="2024-07-31T04:10:57.077Z">
+<meta property="article:author" content="Ian Effendi">
+<meta property="article:tag" content="pull request">
+<meta property="article:tag" content="feature">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://effendiian.github.io/assets/images/banners/feature_cover.jpg">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Feature: chromium-apt-get Issue 626 (PR 627)</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<!--  -->
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2019/04/22/data-science-01/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2024/07/31/chromium-apt-get/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&text=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&is_video=false&description=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Feature: chromium-apt-get Issue 626 (PR 627)&body=Check out this article: http://effendiian.github.io/2024/07/31/chromium-apt-get/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&name=Feature: chromium-apt-get Issue 626 (PR 627)&description=&lt;p&gt;Put together a quick Dev Container feature that I’m hoping to share with the community.&lt;/p&gt;"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2024/07/31/chromium-apt-get/&t=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Background"><span class="toc-number">1.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Feature"><span class="toc-number">2.</span> <span class="toc-text">The Feature</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%96-Context"><span class="toc-number">3.</span> <span class="toc-text">📖 Context</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9A%96%EF%B8%8F-Caveats"><span class="toc-number">4.</span> <span class="toc-text">⚖️ Caveats</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next-Steps"><span class="toc-number">5.</span> <span class="toc-text">Next Steps?</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Feature: chromium-apt-get Issue 626 (PR 627)
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Ian Effendi</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-07-31T03:32:26.000Z" class="dt-published" itemprop="datePublished">2024-07-31</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/blog/">blog</a> › <a class="category-link" href="/categories/blog/feature/">feature</a>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/feature/" rel="tag">feature</a>, <a class="p-category" href="/tags/pull-request/" rel="tag">pull request</a>
+    </div>
+
+
+      
+
+      <span itemprop="license"><a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+    </div>
+  </header>
+  
+<div class="article-gallery">
+    
+    <a class="gallery-item" href="/assets/images/banners/feature_cover.jpg" rel="gallery_clz9bzxkr00e0unoy50w3975w">
+        <img src="/assets/images/banners/feature_cover.jpg" itemprop="image" />
+    </a>
+    
+</div>
+
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>Put together a quick Dev Container feature that I’m hoping to share with the community.</p>
+<span id="more"></span>
+
+<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>I needed a headless browser instance for running the Lighthouse CLI from within a Docker container. I thought I could get a quick one setup for Dev Containers, but it turns out there wasn’t an easy way to get headless chromium installed onto a Dev Container.</p>
+<p>So I made a feature request on the <a target="_blank" rel="noopener" href="https://github.com/devcontainers-contrib/features">devcontainers-contrib&#x2F;features</a> repository.<br><a target="_blank" rel="noopener" href="https://github.com/devcontainers-contrib/features/issues/626">[Feature Request]: chromium-apt-get #626</a>.</p>
+<p>I wasn’t even the first person to ask for something like this, at least, in the broader community: <a target="_blank" rel="noopener" href="https://github.com/devcontainers/features/issues/189">[Feature] Headless browser (chrome&#x2F;chromium&#x2F;firefox) devcontainers&#x2F;features#189</a></p>
+<h2 id="The-Feature"><a href="#The-Feature" class="headerlink" title="The Feature"></a>The Feature</h2><p>DevContainers work by installing features in layers through their <a target="_blank" rel="noopener" href="https://containers.dev/spec">devcontainers.json specification</a>. We just needed to get it in there.</p>
+<p>I added a pull request that describes the whole thing here: <a target="_blank" rel="noopener" href="https://github.com/devcontainers-contrib/features/pull/627">Pull Request #627</a>.</p>
+<p>You can use this feature like so:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&quot;features&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line"> <span class="attr">&quot;ghcr.io/devcontainers-contrib/features/chromium-apt-get:1&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="📖-Context"><a href="#📖-Context" class="headerlink" title="📖 Context"></a>📖 Context</h2><p>There are some <a target="_blank" rel="noopener" href="https://chromium.woolyss.com/#notes">historical reasons</a> for why it’s being done this way:</p>
+<ul>
+<li>The official Chromium team doesn’t supply “stable” binaries of Chromium; they are usually compiled into stable versions by third-parties.</li>
+<li>Chromium installation breaks when installed with <code>snap</code> packages on Ubuntu.</li>
+<li><code>apt-get install -y chromium</code> on Ubuntu 20.04+ is just a wrapper for a <code>snap</code> installations.</li>
+<li>Referenced this guide to find a reliable PPA: <a target="_blank" rel="noopener" href="https://ubuntuhandbook.org/index.php/2021/05/install-chromium-browser-ppa-ubuntu-20-04/">How to Install Chromium Browser via PPA in Ubuntu 20.04, 20.10</a> - credit to <a target="_blank" rel="noopener" href="https://twitter.com/UbuntuHandbook/">UbuntuHandbook</a>.</li>
+</ul>
+<h2 id="⚖️-Caveats"><a href="#⚖️-Caveats" class="headerlink" title="⚖️ Caveats"></a>⚖️ Caveats</h2><p>The maintainers may wish to scrutinize the default PPA used here, both for security and stability concerns. I agree!</p>
+<p>I think future improvement to this feature could include:</p>
+<ul>
+<li>Parameterizing the selected PPA to allow sourcing <code>chromium</code> binaries from public and private PPAs.</li>
+</ul>
+<h2 id="Next-Steps"><a href="#Next-Steps" class="headerlink" title="Next Steps?"></a>Next Steps?</h2><p>Now, all that’s left is to wait for the pull request to be reviewed and then I can go ahead and mark this one as done.</p>
+<!-- ## Updates... ## -->
+
+<!-- The pull request has been merged into the project's main branch! -->
+
+<!-- Pull Request ([#??????](#)): -->
+
+<!-- ![Screenshot of successful merge](/assets/images/screenshots/fix_pr??????.png) -->
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/about/">About</a></li>
+        
+          <li><a href="/projects/">Projects</a></li>
+        
+          <li><a href="/archives/">Writing</a></li>
+        
+          <li><a href="/tags/">Tags</a></li>
+        
+          <li><a href="/categories/">Categories</a></li>
+        
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Background"><span class="toc-number">1.</span> <span class="toc-text">Background</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Feature"><span class="toc-number">2.</span> <span class="toc-text">The Feature</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%96-Context"><span class="toc-number">3.</span> <span class="toc-text">📖 Context</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9A%96%EF%B8%8F-Caveats"><span class="toc-number">4.</span> <span class="toc-text">⚖️ Caveats</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Next-Steps"><span class="toc-number">5.</span> <span class="toc-text">Next Steps?</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://effendiian.github.io/2024/07/31/chromium-apt-get/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&text=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&is_video=false&description=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Feature: chromium-apt-get Issue 626 (PR 627)&body=Check out this article: http://effendiian.github.io/2024/07/31/chromium-apt-get/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&title=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://effendiian.github.io/2024/07/31/chromium-apt-get/&name=Feature: chromium-apt-get Issue 626 (PR 627)&description=&lt;p&gt;Put together a quick Dev Container feature that I’m hoping to share with the community.&lt;/p&gt;"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://effendiian.github.io/2024/07/31/chromium-apt-get/&t=Feature: chromium-apt-get Issue 626 (PR 627)"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2018-2024
+    Ian Effendi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/projects/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tags</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Categories</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+  
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/> 
+   
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" crossorigin="anonymous"></script>
+  
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
