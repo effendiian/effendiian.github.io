@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>@effendiian</title>
+    <link>http://effendiian.github.io/</link>
+    
+    <image>
+      <url>http://effendiian.github.io/themes/cactus/source/images/favicon-192x192.png</url>
+      <title>@effendiian</title>
+      <link>http://effendiian.github.io/</link>
+    </image>
+    
+    <atom:link href="http://effendiian.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Wed, 31 Jul 2024 04:10:57 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Feature: chromium-apt-get Issue 626 (PR 627)</title>
+      <link>http://effendiian.github.io/2024/07/31/chromium-apt-get/</link>
+      <guid>http://effendiian.github.io/2024/07/31/chromium-apt-get/</guid>
+      <pubDate>Wed, 31 Jul 2024 03:32:26 GMT</pubDate>
+      
+      <description>&lt;p&gt;Put together a quick Dev Container feature that I’m hoping to share with the community.&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/feature/">feature</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/pull-request/">pull request</category>
+      
+      <category domain="http://effendiian.github.io/tags/feature/">feature</category>
+      
+      
+      <comments>http://effendiian.github.io/2024/07/31/chromium-apt-get/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Journey into Python</title>
+      <link>http://effendiian.github.io/2019/04/22/data-science-01/</link>
+      <guid>http://effendiian.github.io/2019/04/22/data-science-01/</guid>
+      <pubDate>Mon, 22 Apr 2019 16:25:10 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;Data-Science-001-Journey-into-Python&quot;&gt;&lt;a href=&quot;#Data-Science-001-Journey-into-Python&quot; class=&quot;headerlink&quot; title=&quot;Data Science 001 -</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/data-science/">data-science</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/game-development/">game development</category>
+      
+      <category domain="http://effendiian.github.io/tags/data-science/">data-science</category>
+      
+      <category domain="http://effendiian.github.io/tags/python/">python</category>
+      
+      <category domain="http://effendiian.github.io/tags/python3/">python3</category>
+      
+      <category domain="http://effendiian.github.io/tags/data-analysis/">data analysis</category>
+      
+      <category domain="http://effendiian.github.io/tags/visualization/">visualization</category>
+      
+      <category domain="http://effendiian.github.io/tags/computer-science/">computer science</category>
+      
+      <category domain="http://effendiian.github.io/tags/datasets/">datasets</category>
+      
+      <category domain="http://effendiian.github.io/tags/D3-js/">D3.js</category>
+      
+      <category domain="http://effendiian.github.io/tags/R/">R</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/22/data-science-01/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>HFOSS - Quiz 2</title>
+      <link>http://effendiian.github.io/2019/04/22/quiz-2/</link>
+      <guid>http://effendiian.github.io/2019/04/22/quiz-2/</guid>
+      <pubDate>Mon, 22 Apr 2019 09:30:14 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;&lt;em&gt;HFOSS is not a lawyer, and this does not constitute legal advice.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Short-Answer&quot;&gt;&lt;a href=&quot;#Short-Answer&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/quiz/">quiz</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/hfoss/">hfoss</category>
+      
+      <category domain="http://effendiian.github.io/tags/quiz/">quiz</category>
+      
+      <category domain="http://effendiian.github.io/tags/legacy/">legacy</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/22/quiz-2/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)</title>
+      <link>http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/</link>
+      <guid>http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/</guid>
+      <pubDate>Tue, 09 Apr 2019 12:29:08 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;Squashing-Bugs-freeCodeCamp-Issue-35751&quot;&gt;&lt;a href=&quot;#Squashing-Bugs-freeCodeCamp-Issue-35751&quot; class=&quot;headerlink&quot; title=&quot;Squashing</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/bugfix/">bugfix</category>
+      
+      <category domain="http://effendiian.github.io/categories/freeCodeCamp/">freeCodeCamp</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/bugfix/">bugfix</category>
+      
+      <category domain="http://effendiian.github.io/tags/education/">education</category>
+      
+      <category domain="http://effendiian.github.io/tags/triage/">triage</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Triage - Installing Free Code Camp Locally</title>
+      <link>http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/</link>
+      <guid>http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/</guid>
+      <pubDate>Mon, 08 Apr 2019 20:35:14 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;Why-Build-Local&quot;&gt;&lt;a href=&quot;#Why-Build-Local&quot; class=&quot;headerlink&quot; title=&quot;Why Build Local?&quot;&gt;&lt;/a&gt;Why Build Local?&lt;/h1&gt;&lt;p&gt;Although it</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/bugfix/">bugfix</category>
+      
+      <category domain="http://effendiian.github.io/categories/freeCodeCamp/">freeCodeCamp</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/bugfix/">bugfix</category>
+      
+      <category domain="http://effendiian.github.io/tags/education/">education</category>
+      
+      <category domain="http://effendiian.github.io/tags/docker/">docker</category>
+      
+      <category domain="http://effendiian.github.io/tags/triage/">triage</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)</title>
+      <link>http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/</link>
+      <guid>http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/</guid>
+      <pubDate>Mon, 08 Apr 2019 01:14:25 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;Squashing-Bugs-freeCodeCamp-Issue-35791&quot;&gt;&lt;a href=&quot;#Squashing-Bugs-freeCodeCamp-Issue-35791&quot; class=&quot;headerlink&quot; title=&quot;Squashing</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/bugfix/">bugfix</category>
+      
+      <category domain="http://effendiian.github.io/categories/freeCodeCamp/">freeCodeCamp</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/bugfix/">bugfix</category>
+      
+      <category domain="http://effendiian.github.io/tags/education/">education</category>
+      
+      <category domain="http://effendiian.github.io/tags/freeCodeCamp/">freeCodeCamp</category>
+      
+      <category domain="http://effendiian.github.io/tags/typo/">typo</category>
+      
+      <category domain="http://effendiian.github.io/tags/pull-request/">pull request</category>
+      
+      <category domain="http://effendiian.github.io/tags/nonprofit/">nonprofit</category>
+      
+      <category domain="http://effendiian.github.io/tags/code/">code</category>
+      
+      <category domain="http://effendiian.github.io/tags/FLOSS/">FLOSS</category>
+      
+      <category domain="http://effendiian.github.io/tags/issue/">issue</category>
+      
+      <category domain="http://effendiian.github.io/tags/Travis-CI/">Travis CI</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Triage - Troubleshooting Docker on WSL</title>
+      <link>http://effendiian.github.io/2019/04/05/triage-docker-on-wsl/</link>
+      <guid>http://effendiian.github.io/2019/04/05/triage-docker-on-wsl/</guid>
+      <pubDate>Fri, 05 Apr 2019 20:38:45 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;I-Can’t-Dock-Here&quot;&gt;&lt;a href=&quot;#I-Can’t-Dock-Here&quot; class=&quot;headerlink&quot; title=&quot;I Can’t Dock Here.&quot;&gt;&lt;/a&gt;I Can’t Dock Here.&lt;/h1&gt;&lt;p&gt;During</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/bugfix/">bugfix</category>
+      
+      <category domain="http://effendiian.github.io/categories/freeCodeCamp/">freeCodeCamp</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/bugfix/">bugfix</category>
+      
+      <category domain="http://effendiian.github.io/tags/education/">education</category>
+      
+      <category domain="http://effendiian.github.io/tags/docker/">docker</category>
+      
+      <category domain="http://effendiian.github.io/tags/triage/">triage</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/05/triage-docker-on-wsl/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>FLOSS in Review: freeCodeCamp</title>
+      <link>http://effendiian.github.io/2019/04/04/commarch-fcc/</link>
+      <guid>http://effendiian.github.io/2019/04/04/commarch-fcc/</guid>
+      <pubDate>Thu, 04 Apr 2019 23:36:28 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;FLOSS-in-Review-freeCodeCamp&quot;&gt;&lt;a href=&quot;#FLOSS-in-Review-freeCodeCamp&quot; class=&quot;headerlink&quot; title=&quot;FLOSS in Review -</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      <category domain="http://effendiian.github.io/categories/freeCodeCamp/">freeCodeCamp</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/bugfix/">bugfix</category>
+      
+      <category domain="http://effendiian.github.io/tags/education/">education</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/04/commarch-fcc/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Quicklook: FLOSS Alternatives to OpenAL</title>
+      <link>http://effendiian.github.io/2019/04/03/quicklook-openal/</link>
+      <guid>http://effendiian.github.io/2019/04/03/quicklook-openal/</guid>
+      <pubDate>Wed, 03 Apr 2019 12:19:21 GMT</pubDate>
+      
+      <description>&lt;p&gt;&lt;a href=&quot;https://www.openal.org/&quot;&gt;OpenAL&lt;/a&gt; is a cross-platform 3D audio API for software applications that require audio. There’s just one thing: it’s open as in &lt;em&gt;open-API&lt;/em&gt; not &lt;em&gt;open-source&lt;/em&gt;. OpenAL, like OpenGL, attempts to avoid being vendor-specific. That’s great for interoperability, but, not so great for the tenets of free software.&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/quicklook/">quicklook</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/game-development/">game development</category>
+      
+      <category domain="http://effendiian.github.io/tags/quicklook/">quicklook</category>
+      
+      <category domain="http://effendiian.github.io/tags/audio/">audio</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/03/quicklook-openal/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>The Closing Heart of the Open Source</title>
+      <link>http://effendiian.github.io/2019/04/03/discourse-osculture/</link>
+      <guid>http://effendiian.github.io/2019/04/03/discourse-osculture/</guid>
+      <pubDate>Wed, 03 Apr 2019 10:59:19 GMT</pubDate>
+      
+      <description>&lt;p&gt;There was a time when ‘open’ software wasn’t synonymous with open source and far removed from the discussions of free (as in &lt;em&gt;libre&lt;/em&gt;) software. &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_system_(computing)&quot;&gt;Open systems&lt;/a&gt; were popularized in the 1980s, when interoperability and portability between proprietary and third-party software was a rarity. &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_data&quot;&gt;Open data&lt;/a&gt; pushes for the freedom to republish and use data, similar to the open source movement.&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/tags/hfoss/">hfoss</category>
+      
+      <category domain="http://effendiian.github.io/tags/community/">community</category>
+      
+      <category domain="http://effendiian.github.io/tags/culture/">culture</category>
+      
+      <category domain="http://effendiian.github.io/tags/discourse/">discourse</category>
+      
+      <category domain="http://effendiian.github.io/tags/interoperability/">interoperability</category>
+      
+      <category domain="http://effendiian.github.io/tags/portability/">portability</category>
+      
+      <category domain="http://effendiian.github.io/tags/proprietary-software/">proprietary software</category>
+      
+      <category domain="http://effendiian.github.io/tags/open-data/">open data</category>
+      
+      <category domain="http://effendiian.github.io/tags/open-core/">open core</category>
+      
+      <category domain="http://effendiian.github.io/tags/business-model/">business model</category>
+      
+      <category domain="http://effendiian.github.io/tags/commercial-software/">commercial software</category>
+      
+      <category domain="http://effendiian.github.io/tags/feature-limited/">feature-limited</category>
+      
+      <category domain="http://effendiian.github.io/tags/proprietary-version/">proprietary version</category>
+      
+      <category domain="http://effendiian.github.io/tags/MongoDB/">MongoDB</category>
+      
+      <category domain="http://effendiian.github.io/tags/GitLab/">GitLab</category>
+      
+      <category domain="http://effendiian.github.io/tags/MySQL/">MySQL</category>
+      
+      <category domain="http://effendiian.github.io/tags/AGPL/">AGPL</category>
+      
+      <category domain="http://effendiian.github.io/tags/SSPL/">SSPL</category>
+      
+      <category domain="http://effendiian.github.io/tags/Open-Source-Initiative/">Open Source Initiative</category>
+      
+      <category domain="http://effendiian.github.io/tags/controversy/">controversy</category>
+      
+      <category domain="http://effendiian.github.io/tags/shifting-landscapes/">shifting landscapes</category>
+      
+      <category domain="http://effendiian.github.io/tags/financial-investment/">financial investment</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/03/discourse-osculture/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Quicklook: What&#39;s The Scoop?</title>
+      <link>http://effendiian.github.io/2019/04/03/quicklook-scoop/</link>
+      <guid>http://effendiian.github.io/2019/04/03/quicklook-scoop/</guid>
+      <pubDate>Wed, 03 Apr 2019 01:18:07 GMT</pubDate>
+      
+      <description>&lt;p&gt;&lt;a href=&quot;https://opensource.microsoft.com/&quot;&gt;Microsoft’s releasing more open-source software&lt;/a&gt;, but, everyone knows it doesn’t matter if your distro doesn’t have a good shell.&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/quicklook/">quicklook</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/Windows/">Windows</category>
+      
+      <category domain="http://effendiian.github.io/tags/quicklook/">quicklook</category>
+      
+      <category domain="http://effendiian.github.io/tags/shell/">shell</category>
+      
+      <category domain="http://effendiian.github.io/tags/powershell/">powershell</category>
+      
+      <category domain="http://effendiian.github.io/tags/scoop/">scoop</category>
+      
+      <category domain="http://effendiian.github.io/tags/unlicense/">unlicense</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/03/quicklook-scoop/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Sugarlabs: Team Proposal for Baggage Claim Activity</title>
+      <link>http://effendiian.github.io/2019/04/02/sugarlabs-baggage-claim/</link>
+      <guid>http://effendiian.github.io/2019/04/02/sugarlabs-baggage-claim/</guid>
+      <pubDate>Tue, 02 Apr 2019 01:52:05 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;Sugarlabs-Activity-Team-Proposal&quot;&gt;&lt;a href=&quot;#Sugarlabs-Activity-Team-Proposal&quot; class=&quot;headerlink&quot; title=&quot;Sugarlabs Activity - Team</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/documentation/">documentation</category>
+      
+      <category domain="http://effendiian.github.io/tags/architecture/">architecture</category>
+      
+      <category domain="http://effendiian.github.io/tags/analysis/">analysis</category>
+      
+      <category domain="http://effendiian.github.io/tags/Sugarlabs/">Sugarlabs</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/04/02/sugarlabs-baggage-claim/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Quicklook: RIT Student Government Goes Open-Source</title>
+      <link>http://effendiian.github.io/2019/03/26/quicklook-sgos/</link>
+      <guid>http://effendiian.github.io/2019/03/26/quicklook-sgos/</guid>
+      <pubDate>Tue, 26 Mar 2019 01:59:48 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;&lt;strong&gt;The Rochester Institute of Technology’s Student Government (SG) is another member of the FLOSS community!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/quicklook/">quicklook</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/github/">github</category>
+      
+      <category domain="http://effendiian.github.io/tags/RIT/">RIT</category>
+      
+      <category domain="http://effendiian.github.io/tags/quicklook/">quicklook</category>
+      
+      <category domain="http://effendiian.github.io/tags/Student-Government/">Student Government</category>
+      
+      <category domain="http://effendiian.github.io/tags/university/">university</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/03/26/quicklook-sgos/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Community Architecture Analysis: KDevelop</title>
+      <link>http://effendiian.github.io/2019/03/21/commarchreport/</link>
+      <guid>http://effendiian.github.io/2019/03/21/commarchreport/</guid>
+      <pubDate>Thu, 21 Mar 2019 23:43:55 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;p&gt;Analysis of KDevelop’s architecture as an open-source community project.&lt;/p&gt;
+&lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/documentation/">documentation</category>
+      
+      <category domain="http://effendiian.github.io/tags/architecture/">architecture</category>
+      
+      <category domain="http://effendiian.github.io/tags/analysis/">analysis</category>
+      
+      <category domain="http://effendiian.github.io/tags/KDevelop/">KDevelop</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/03/21/commarchreport/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Quicklook: SONY&#39;s Open Source Surprise - OpenColorIO</title>
+      <link>http://effendiian.github.io/2019/03/20/quicklook-sony-oss/</link>
+      <guid>http://effendiian.github.io/2019/03/20/quicklook-sony-oss/</guid>
+      <pubDate>Wed, 20 Mar 2019 04:46:02 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;Sony’s-OpenColorIO&quot;&gt;&lt;a href=&quot;#Sony’s-OpenColorIO&quot; class=&quot;headerlink&quot; title=&quot;Sony’s OpenColorIO&quot;&gt;&lt;/a&gt;Sony’s OpenColorIO&lt;/h2&gt;&lt;p&gt;Sony</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/quicklook/">quicklook</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/graphics/">graphics</category>
+      
+      <category domain="http://effendiian.github.io/tags/film/">film</category>
+      
+      <category domain="http://effendiian.github.io/tags/imaging/">imaging</category>
+      
+      <category domain="http://effendiian.github.io/tags/quicklook/">quicklook</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/03/20/quicklook-sony-oss/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Read It! The Architecture of Open Source Applications</title>
+      <link>http://effendiian.github.io/2019/03/20/reading-oss-arch/</link>
+      <guid>http://effendiian.github.io/2019/03/20/reading-oss-arch/</guid>
+      <pubDate>Wed, 20 Mar 2019 04:24:11 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;The-Architecture-of-Open-Source-Applications&quot;&gt;&lt;a href=&quot;#The-Architecture-of-Open-Source-Applications&quot; class=&quot;headerlink&quot; title=&quot;The</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/documentation/">documentation</category>
+      
+      <category domain="http://effendiian.github.io/tags/reading/">reading</category>
+      
+      <category domain="http://effendiian.github.io/tags/architecture/">architecture</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/03/20/reading-oss-arch/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Literature Review: NYS Next Generation Mathematics Learning Standards</title>
+      <link>http://effendiian.github.io/2019/03/20/lit-review-3/</link>
+      <guid>http://effendiian.github.io/2019/03/20/lit-review-3/</guid>
+      <pubDate>Wed, 20 Mar 2019 03:32:31 GMT</pubDate>
+      
+      <description>&lt;p&gt;In this literature review, HFOSS students were asked to review the education standards for New York State’s mathematics curriculae. This is in preparation for our final project.&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/documentation/">documentation</category>
+      
+      <category domain="http://effendiian.github.io/tags/reading/">reading</category>
+      
+      <category domain="http://effendiian.github.io/tags/math/">math</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/03/20/lit-review-3/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Community Archictecture Analysis: Team Proposal</title>
+      <link>http://effendiian.github.io/2019/03/20/commarchteam/</link>
+      <guid>http://effendiian.github.io/2019/03/20/commarchteam/</guid>
+      <pubDate>Wed, 20 Mar 2019 01:52:05 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;Team-Proposal&quot;&gt;&lt;a href=&quot;#Team-Proposal&quot; class=&quot;headerlink&quot; title=&quot;Team Proposal&quot;&gt;&lt;/a&gt;Team Proposal&lt;/h1&gt;&lt;p&gt;This blog post serves as</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/documentation/">documentation</category>
+      
+      <category domain="http://effendiian.github.io/tags/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/tags/hfoss/">hfoss</category>
+      
+      <category domain="http://effendiian.github.io/tags/architecture/">architecture</category>
+      
+      <category domain="http://effendiian.github.io/tags/analysis/">analysis</category>
+      
+      <category domain="http://effendiian.github.io/tags/community/">community</category>
+      
+      <category domain="http://effendiian.github.io/tags/software/">software</category>
+      
+      <category domain="http://effendiian.github.io/tags/project/">project</category>
+      
+      <category domain="http://effendiian.github.io/tags/students/">students</category>
+      
+      <category domain="http://effendiian.github.io/tags/RIT/">RIT</category>
+      
+      <category domain="http://effendiian.github.io/tags/IGM-program/">IGM program</category>
+      
+      <category domain="http://effendiian.github.io/tags/health/">health</category>
+      
+      <category domain="http://effendiian.github.io/tags/perspectives/">perspectives</category>
+      
+      <category domain="http://effendiian.github.io/tags/findings/">findings</category>
+      
+      <category domain="http://effendiian.github.io/tags/KDevelop/">KDevelop</category>
+      
+      <category domain="http://effendiian.github.io/tags/IDE/">IDE</category>
+      
+      <category domain="http://effendiian.github.io/tags/C/">C++</category>
+      
+      <category domain="http://effendiian.github.io/tags/Python/">Python</category>
+      
+      <category domain="http://effendiian.github.io/tags/QML-JavaScript/">QML/JavaScript</category>
+      
+      <category domain="http://effendiian.github.io/tags/PHP/">PHP</category>
+      
+      <category domain="http://effendiian.github.io/tags/KDE/">KDE</category>
+      
+      <category domain="http://effendiian.github.io/tags/applications/">applications</category>
+      
+      <category domain="http://effendiian.github.io/tags/free-software/">free software</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/03/20/commarchteam/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>HFOSS - Quiz 1</title>
+      <link>http://effendiian.github.io/2019/03/08/quiz-1/</link>
+      <guid>http://effendiian.github.io/2019/03/08/quiz-1/</guid>
+      <pubDate>Fri, 08 Mar 2019 09:20:14 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;Short-Answer&quot;&gt;&lt;a href=&quot;#Short-Answer&quot; class=&quot;headerlink&quot; title=&quot;Short Answer&quot;&gt;&lt;/a&gt;Short Answer&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1) Please expand each</description>
+          
+        
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/quiz/">quiz</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/hfoss/">hfoss</category>
+      
+      <category domain="http://effendiian.github.io/tags/quiz/">quiz</category>
+      
+      <category domain="http://effendiian.github.io/tags/legacy/">legacy</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/03/08/quiz-1/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Literature Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</title>
+      <link>http://effendiian.github.io/2019/02/17/lit-review-2/</link>
+      <guid>http://effendiian.github.io/2019/02/17/lit-review-2/</guid>
+      <pubDate>Sun, 17 Feb 2019 22:16:03 GMT</pubDate>
+      
+      <description>&lt;p&gt;This is the second of several literature reviews for content relevant to the humanitarian free and open source software course. In this entry, I will be reviewing &lt;em&gt;&lt;a href=&quot;https://github.com/ritjoe/hfoss/blob/master/assets/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf&quot;&gt;Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&lt;/a&gt;&lt;/em&gt; by &lt;a href=&quot;https://nadiaeghbal.com/&quot;&gt;Nadia Eghbal&lt;/a&gt;.&lt;/p&gt;</description>
+      
+      
+      
+      
+      <category domain="http://effendiian.github.io/categories/blog/">blog</category>
+      
+      <category domain="http://effendiian.github.io/categories/blog/hfoss/">hfoss</category>
+      
+      
+      <category domain="http://effendiian.github.io/tags/open-source/">open-source</category>
+      
+      <category domain="http://effendiian.github.io/tags/class/">class</category>
+      
+      <category domain="http://effendiian.github.io/tags/bugs/">bugs</category>
+      
+      <category domain="http://effendiian.github.io/tags/issues/">issues</category>
+      
+      <category domain="http://effendiian.github.io/tags/documentation/">documentation</category>
+      
+      <category domain="http://effendiian.github.io/tags/reading/">reading</category>
+      
+      
+      <comments>http://effendiian.github.io/2019/02/17/lit-review-2/#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>@effendiian</title>
+  <icon>http://effendiian.github.io/themes/cactus/source/images/favicon-192x192.png</icon>
+  <subtitle>Personal blog and portfolio website.</subtitle>
+  <link href="http://effendiian.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://effendiian.github.io/"/>
+  <updated>2024-07-31T04:10:57.077Z</updated>
+  <id>http://effendiian.github.io/</id>
+  
+  <author>
+    <name>Ian Effendi</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Feature: chromium-apt-get Issue 626 (PR 627)</title>
+    <link href="http://effendiian.github.io/2024/07/31/chromium-apt-get/"/>
+    <id>http://effendiian.github.io/2024/07/31/chromium-apt-get/</id>
+    <published>2024-07-31T03:32:26.000Z</published>
+    <updated>2024-07-31T04:10:57.077Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Put together a quick Dev Container feature that I’m hoping to share with the community.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="feature" scheme="http://effendiian.github.io/categories/blog/feature/"/>
+    
+    
+    <category term="pull request" scheme="http://effendiian.github.io/tags/pull-request/"/>
+    
+    <category term="feature" scheme="http://effendiian.github.io/tags/feature/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Journey into Python</title>
+    <link href="http://effendiian.github.io/2019/04/22/data-science-01/"/>
+    <id>http://effendiian.github.io/2019/04/22/data-science-01/</id>
+    <published>2019-04-22T16:25:10.000Z</published>
+    <updated>2024-07-31T02:02:43.263Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Data-Science-001-Journey-into-Python&quot;&gt;&lt;a href=&quot;#Data-Science-001-Journey-into-Python&quot; class=&quot;headerlink&quot; title=&quot;Data Science 001 -</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="data-science" scheme="http://effendiian.github.io/categories/blog/data-science/"/>
+    
+    
+    <category term="game development" scheme="http://effendiian.github.io/tags/game-development/"/>
+    
+    <category term="data-science" scheme="http://effendiian.github.io/tags/data-science/"/>
+    
+    <category term="python" scheme="http://effendiian.github.io/tags/python/"/>
+    
+    <category term="python3" scheme="http://effendiian.github.io/tags/python3/"/>
+    
+    <category term="data analysis" scheme="http://effendiian.github.io/tags/data-analysis/"/>
+    
+    <category term="visualization" scheme="http://effendiian.github.io/tags/visualization/"/>
+    
+    <category term="computer science" scheme="http://effendiian.github.io/tags/computer-science/"/>
+    
+    <category term="datasets" scheme="http://effendiian.github.io/tags/datasets/"/>
+    
+    <category term="D3.js" scheme="http://effendiian.github.io/tags/D3-js/"/>
+    
+    <category term="R" scheme="http://effendiian.github.io/tags/R/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HFOSS - Quiz 2</title>
+    <link href="http://effendiian.github.io/2019/04/22/quiz-2/"/>
+    <id>http://effendiian.github.io/2019/04/22/quiz-2/</id>
+    <published>2019-04-22T09:30:14.000Z</published>
+    <updated>2024-07-31T02:11:54.338Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;em&gt;HFOSS is not a lawyer, and this does not constitute legal advice.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Short-Answer&quot;&gt;&lt;a href=&quot;#Short-Answer&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    <category term="quiz" scheme="http://effendiian.github.io/categories/blog/hfoss/quiz/"/>
+    
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/tags/hfoss/"/>
+    
+    <category term="quiz" scheme="http://effendiian.github.io/tags/quiz/"/>
+    
+    <category term="legacy" scheme="http://effendiian.github.io/tags/legacy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Squashing Bugs - freeCodeCamp Issue #35751 (PR #35809, #35810)</title>
+    <link href="http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/"/>
+    <id>http://effendiian.github.io/2019/04/09/bugfix-fcc-35751/</id>
+    <published>2019-04-09T12:29:08.000Z</published>
+    <updated>2024-07-31T02:36:29.547Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Squashing-Bugs-freeCodeCamp-Issue-35751&quot;&gt;&lt;a href=&quot;#Squashing-Bugs-freeCodeCamp-Issue-35751&quot; class=&quot;headerlink&quot; title=&quot;Squashing</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="bugfix" scheme="http://effendiian.github.io/categories/blog/bugfix/"/>
+    
+    <category term="freeCodeCamp" scheme="http://effendiian.github.io/categories/freeCodeCamp/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="bugfix" scheme="http://effendiian.github.io/tags/bugfix/"/>
+    
+    <category term="education" scheme="http://effendiian.github.io/tags/education/"/>
+    
+    <category term="triage" scheme="http://effendiian.github.io/tags/triage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Triage - Installing Free Code Camp Locally</title>
+    <link href="http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/"/>
+    <id>http://effendiian.github.io/2019/04/08/triage-fcc-local-dev-setup/</id>
+    <published>2019-04-08T20:35:14.000Z</published>
+    <updated>2024-07-31T02:36:33.427Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Why-Build-Local&quot;&gt;&lt;a href=&quot;#Why-Build-Local&quot; class=&quot;headerlink&quot; title=&quot;Why Build Local?&quot;&gt;&lt;/a&gt;Why Build Local?&lt;/h1&gt;&lt;p&gt;Although it</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="bugfix" scheme="http://effendiian.github.io/categories/blog/bugfix/"/>
+    
+    <category term="freeCodeCamp" scheme="http://effendiian.github.io/categories/freeCodeCamp/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="bugfix" scheme="http://effendiian.github.io/tags/bugfix/"/>
+    
+    <category term="education" scheme="http://effendiian.github.io/tags/education/"/>
+    
+    <category term="docker" scheme="http://effendiian.github.io/tags/docker/"/>
+    
+    <category term="triage" scheme="http://effendiian.github.io/tags/triage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Squashing Bugs - freeCodeCamp Issue #35791 (PR #35792)</title>
+    <link href="http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/"/>
+    <id>http://effendiian.github.io/2019/04/08/bugfix-fcc-35791/</id>
+    <published>2019-04-08T01:14:25.000Z</published>
+    <updated>2024-07-31T02:36:38.427Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Squashing-Bugs-freeCodeCamp-Issue-35791&quot;&gt;&lt;a href=&quot;#Squashing-Bugs-freeCodeCamp-Issue-35791&quot; class=&quot;headerlink&quot; title=&quot;Squashing</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="bugfix" scheme="http://effendiian.github.io/categories/blog/bugfix/"/>
+    
+    <category term="freeCodeCamp" scheme="http://effendiian.github.io/categories/freeCodeCamp/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="bugfix" scheme="http://effendiian.github.io/tags/bugfix/"/>
+    
+    <category term="education" scheme="http://effendiian.github.io/tags/education/"/>
+    
+    <category term="freeCodeCamp" scheme="http://effendiian.github.io/tags/freeCodeCamp/"/>
+    
+    <category term="typo" scheme="http://effendiian.github.io/tags/typo/"/>
+    
+    <category term="pull request" scheme="http://effendiian.github.io/tags/pull-request/"/>
+    
+    <category term="nonprofit" scheme="http://effendiian.github.io/tags/nonprofit/"/>
+    
+    <category term="code" scheme="http://effendiian.github.io/tags/code/"/>
+    
+    <category term="FLOSS" scheme="http://effendiian.github.io/tags/FLOSS/"/>
+    
+    <category term="issue" scheme="http://effendiian.github.io/tags/issue/"/>
+    
+    <category term="Travis CI" scheme="http://effendiian.github.io/tags/Travis-CI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Triage - Troubleshooting Docker on WSL</title>
+    <link href="http://effendiian.github.io/2019/04/05/triage-docker-on-wsl/"/>
+    <id>http://effendiian.github.io/2019/04/05/triage-docker-on-wsl/</id>
+    <published>2019-04-05T20:38:45.000Z</published>
+    <updated>2024-07-31T02:36:47.817Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;I-Can’t-Dock-Here&quot;&gt;&lt;a href=&quot;#I-Can’t-Dock-Here&quot; class=&quot;headerlink&quot; title=&quot;I Can’t Dock Here.&quot;&gt;&lt;/a&gt;I Can’t Dock Here.&lt;/h1&gt;&lt;p&gt;During</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="bugfix" scheme="http://effendiian.github.io/categories/blog/bugfix/"/>
+    
+    <category term="freeCodeCamp" scheme="http://effendiian.github.io/categories/freeCodeCamp/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="bugfix" scheme="http://effendiian.github.io/tags/bugfix/"/>
+    
+    <category term="education" scheme="http://effendiian.github.io/tags/education/"/>
+    
+    <category term="docker" scheme="http://effendiian.github.io/tags/docker/"/>
+    
+    <category term="triage" scheme="http://effendiian.github.io/tags/triage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FLOSS in Review: freeCodeCamp</title>
+    <link href="http://effendiian.github.io/2019/04/04/commarch-fcc/"/>
+    <id>http://effendiian.github.io/2019/04/04/commarch-fcc/</id>
+    <published>2019-04-04T23:36:28.000Z</published>
+    <updated>2024-07-31T02:08:55.105Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;FLOSS-in-Review-freeCodeCamp&quot;&gt;&lt;a href=&quot;#FLOSS-in-Review-freeCodeCamp&quot; class=&quot;headerlink&quot; title=&quot;FLOSS in Review -</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    <category term="freeCodeCamp" scheme="http://effendiian.github.io/categories/freeCodeCamp/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="bugfix" scheme="http://effendiian.github.io/tags/bugfix/"/>
+    
+    <category term="education" scheme="http://effendiian.github.io/tags/education/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quicklook: FLOSS Alternatives to OpenAL</title>
+    <link href="http://effendiian.github.io/2019/04/03/quicklook-openal/"/>
+    <id>http://effendiian.github.io/2019/04/03/quicklook-openal/</id>
+    <published>2019-04-03T12:19:21.000Z</published>
+    <updated>2024-07-31T02:32:24.691Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.openal.org/&quot;&gt;OpenAL&lt;/a&gt; is a cross-platform 3D audio API for software applications that require audio. There’s just one thing: it’s open as in &lt;em&gt;open-API&lt;/em&gt; not &lt;em&gt;open-source&lt;/em&gt;. OpenAL, like OpenGL, attempts to avoid being vendor-specific. That’s great for interoperability, but, not so great for the tenets of free software.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/categories/blog/quicklook/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="game development" scheme="http://effendiian.github.io/tags/game-development/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/tags/quicklook/"/>
+    
+    <category term="audio" scheme="http://effendiian.github.io/tags/audio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Closing Heart of the Open Source</title>
+    <link href="http://effendiian.github.io/2019/04/03/discourse-osculture/"/>
+    <id>http://effendiian.github.io/2019/04/03/discourse-osculture/</id>
+    <published>2019-04-03T10:59:19.000Z</published>
+    <updated>2024-07-31T01:53:32.940Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;There was a time when ‘open’ software wasn’t synonymous with open source and far removed from the discussions of free (as in &lt;em&gt;libre&lt;/em&gt;) software. &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_system_(computing)&quot;&gt;Open systems&lt;/a&gt; were popularized in the 1980s, when interoperability and portability between proprietary and third-party software was a rarity. &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_data&quot;&gt;Open data&lt;/a&gt; pushes for the freedom to republish and use data, similar to the open source movement.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="blog" scheme="http://effendiian.github.io/tags/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/tags/hfoss/"/>
+    
+    <category term="community" scheme="http://effendiian.github.io/tags/community/"/>
+    
+    <category term="culture" scheme="http://effendiian.github.io/tags/culture/"/>
+    
+    <category term="discourse" scheme="http://effendiian.github.io/tags/discourse/"/>
+    
+    <category term="interoperability" scheme="http://effendiian.github.io/tags/interoperability/"/>
+    
+    <category term="portability" scheme="http://effendiian.github.io/tags/portability/"/>
+    
+    <category term="proprietary software" scheme="http://effendiian.github.io/tags/proprietary-software/"/>
+    
+    <category term="open data" scheme="http://effendiian.github.io/tags/open-data/"/>
+    
+    <category term="open core" scheme="http://effendiian.github.io/tags/open-core/"/>
+    
+    <category term="business model" scheme="http://effendiian.github.io/tags/business-model/"/>
+    
+    <category term="commercial software" scheme="http://effendiian.github.io/tags/commercial-software/"/>
+    
+    <category term="feature-limited" scheme="http://effendiian.github.io/tags/feature-limited/"/>
+    
+    <category term="proprietary version" scheme="http://effendiian.github.io/tags/proprietary-version/"/>
+    
+    <category term="MongoDB" scheme="http://effendiian.github.io/tags/MongoDB/"/>
+    
+    <category term="GitLab" scheme="http://effendiian.github.io/tags/GitLab/"/>
+    
+    <category term="MySQL" scheme="http://effendiian.github.io/tags/MySQL/"/>
+    
+    <category term="AGPL" scheme="http://effendiian.github.io/tags/AGPL/"/>
+    
+    <category term="SSPL" scheme="http://effendiian.github.io/tags/SSPL/"/>
+    
+    <category term="Open Source Initiative" scheme="http://effendiian.github.io/tags/Open-Source-Initiative/"/>
+    
+    <category term="controversy" scheme="http://effendiian.github.io/tags/controversy/"/>
+    
+    <category term="shifting landscapes" scheme="http://effendiian.github.io/tags/shifting-landscapes/"/>
+    
+    <category term="financial investment" scheme="http://effendiian.github.io/tags/financial-investment/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quicklook: What&#39;s The Scoop?</title>
+    <link href="http://effendiian.github.io/2019/04/03/quicklook-scoop/"/>
+    <id>http://effendiian.github.io/2019/04/03/quicklook-scoop/</id>
+    <published>2019-04-03T01:18:07.000Z</published>
+    <updated>2024-07-31T02:32:26.561Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://opensource.microsoft.com/&quot;&gt;Microsoft’s releasing more open-source software&lt;/a&gt;, but, everyone knows it doesn’t matter if your distro doesn’t have a good shell.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/categories/blog/quicklook/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="Windows" scheme="http://effendiian.github.io/tags/Windows/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/tags/quicklook/"/>
+    
+    <category term="shell" scheme="http://effendiian.github.io/tags/shell/"/>
+    
+    <category term="powershell" scheme="http://effendiian.github.io/tags/powershell/"/>
+    
+    <category term="scoop" scheme="http://effendiian.github.io/tags/scoop/"/>
+    
+    <category term="unlicense" scheme="http://effendiian.github.io/tags/unlicense/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sugarlabs: Team Proposal for Baggage Claim Activity</title>
+    <link href="http://effendiian.github.io/2019/04/02/sugarlabs-baggage-claim/"/>
+    <id>http://effendiian.github.io/2019/04/02/sugarlabs-baggage-claim/</id>
+    <published>2019-04-02T01:52:05.000Z</published>
+    <updated>2024-07-31T01:53:41.571Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Sugarlabs-Activity-Team-Proposal&quot;&gt;&lt;a href=&quot;#Sugarlabs-Activity-Team-Proposal&quot; class=&quot;headerlink&quot; title=&quot;Sugarlabs Activity - Team</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="documentation" scheme="http://effendiian.github.io/tags/documentation/"/>
+    
+    <category term="architecture" scheme="http://effendiian.github.io/tags/architecture/"/>
+    
+    <category term="analysis" scheme="http://effendiian.github.io/tags/analysis/"/>
+    
+    <category term="Sugarlabs" scheme="http://effendiian.github.io/tags/Sugarlabs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quicklook: RIT Student Government Goes Open-Source</title>
+    <link href="http://effendiian.github.io/2019/03/26/quicklook-sgos/"/>
+    <id>http://effendiian.github.io/2019/03/26/quicklook-sgos/</id>
+    <published>2019-03-26T01:59:48.000Z</published>
+    <updated>2024-07-31T02:32:21.771Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;The Rochester Institute of Technology’s Student Government (SG) is another member of the FLOSS community!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/categories/blog/quicklook/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="github" scheme="http://effendiian.github.io/tags/github/"/>
+    
+    <category term="RIT" scheme="http://effendiian.github.io/tags/RIT/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/tags/quicklook/"/>
+    
+    <category term="Student Government" scheme="http://effendiian.github.io/tags/Student-Government/"/>
+    
+    <category term="university" scheme="http://effendiian.github.io/tags/university/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Community Architecture Analysis: KDevelop</title>
+    <link href="http://effendiian.github.io/2019/03/21/commarchreport/"/>
+    <id>http://effendiian.github.io/2019/03/21/commarchreport/</id>
+    <published>2019-03-21T23:43:55.000Z</published>
+    <updated>2024-07-31T02:07:49.010Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Analysis of KDevelop’s architecture as an open-source community project.&lt;/p&gt;
+&lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="documentation" scheme="http://effendiian.github.io/tags/documentation/"/>
+    
+    <category term="architecture" scheme="http://effendiian.github.io/tags/architecture/"/>
+    
+    <category term="analysis" scheme="http://effendiian.github.io/tags/analysis/"/>
+    
+    <category term="KDevelop" scheme="http://effendiian.github.io/tags/KDevelop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quicklook: SONY&#39;s Open Source Surprise - OpenColorIO</title>
+    <link href="http://effendiian.github.io/2019/03/20/quicklook-sony-oss/"/>
+    <id>http://effendiian.github.io/2019/03/20/quicklook-sony-oss/</id>
+    <published>2019-03-20T04:46:02.000Z</published>
+    <updated>2024-07-31T02:32:18.421Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Sony’s-OpenColorIO&quot;&gt;&lt;a href=&quot;#Sony’s-OpenColorIO&quot; class=&quot;headerlink&quot; title=&quot;Sony’s OpenColorIO&quot;&gt;&lt;/a&gt;Sony’s OpenColorIO&lt;/h2&gt;&lt;p&gt;Sony</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/categories/blog/quicklook/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="graphics" scheme="http://effendiian.github.io/tags/graphics/"/>
+    
+    <category term="film" scheme="http://effendiian.github.io/tags/film/"/>
+    
+    <category term="imaging" scheme="http://effendiian.github.io/tags/imaging/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/tags/quicklook/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Read It! The Architecture of Open Source Applications</title>
+    <link href="http://effendiian.github.io/2019/03/20/reading-oss-arch/"/>
+    <id>http://effendiian.github.io/2019/03/20/reading-oss-arch/</id>
+    <published>2019-03-20T04:24:11.000Z</published>
+    <updated>2024-07-31T01:57:59.935Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;The-Architecture-of-Open-Source-Applications&quot;&gt;&lt;a href=&quot;#The-Architecture-of-Open-Source-Applications&quot; class=&quot;headerlink&quot; title=&quot;The</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="documentation" scheme="http://effendiian.github.io/tags/documentation/"/>
+    
+    <category term="reading" scheme="http://effendiian.github.io/tags/reading/"/>
+    
+    <category term="architecture" scheme="http://effendiian.github.io/tags/architecture/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Literature Review: NYS Next Generation Mathematics Learning Standards</title>
+    <link href="http://effendiian.github.io/2019/03/20/lit-review-3/"/>
+    <id>http://effendiian.github.io/2019/03/20/lit-review-3/</id>
+    <published>2019-03-20T03:32:31.000Z</published>
+    <updated>2024-07-31T02:32:41.092Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;In this literature review, HFOSS students were asked to review the education standards for New York State’s mathematics curriculae. This is in preparation for our final project.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="documentation" scheme="http://effendiian.github.io/tags/documentation/"/>
+    
+    <category term="reading" scheme="http://effendiian.github.io/tags/reading/"/>
+    
+    <category term="math" scheme="http://effendiian.github.io/tags/math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Community Archictecture Analysis: Team Proposal</title>
+    <link href="http://effendiian.github.io/2019/03/20/commarchteam/"/>
+    <id>http://effendiian.github.io/2019/03/20/commarchteam/</id>
+    <published>2019-03-20T01:52:05.000Z</published>
+    <updated>2024-07-31T01:49:22.946Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Team-Proposal&quot;&gt;&lt;a href=&quot;#Team-Proposal&quot; class=&quot;headerlink&quot; title=&quot;Team Proposal&quot;&gt;&lt;/a&gt;Team Proposal&lt;/h1&gt;&lt;p&gt;This blog post serves as</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="documentation" scheme="http://effendiian.github.io/tags/documentation/"/>
+    
+    <category term="blog" scheme="http://effendiian.github.io/tags/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/tags/hfoss/"/>
+    
+    <category term="architecture" scheme="http://effendiian.github.io/tags/architecture/"/>
+    
+    <category term="analysis" scheme="http://effendiian.github.io/tags/analysis/"/>
+    
+    <category term="community" scheme="http://effendiian.github.io/tags/community/"/>
+    
+    <category term="software" scheme="http://effendiian.github.io/tags/software/"/>
+    
+    <category term="project" scheme="http://effendiian.github.io/tags/project/"/>
+    
+    <category term="students" scheme="http://effendiian.github.io/tags/students/"/>
+    
+    <category term="RIT" scheme="http://effendiian.github.io/tags/RIT/"/>
+    
+    <category term="IGM program" scheme="http://effendiian.github.io/tags/IGM-program/"/>
+    
+    <category term="health" scheme="http://effendiian.github.io/tags/health/"/>
+    
+    <category term="perspectives" scheme="http://effendiian.github.io/tags/perspectives/"/>
+    
+    <category term="findings" scheme="http://effendiian.github.io/tags/findings/"/>
+    
+    <category term="KDevelop" scheme="http://effendiian.github.io/tags/KDevelop/"/>
+    
+    <category term="IDE" scheme="http://effendiian.github.io/tags/IDE/"/>
+    
+    <category term="C++" scheme="http://effendiian.github.io/tags/C/"/>
+    
+    <category term="Python" scheme="http://effendiian.github.io/tags/Python/"/>
+    
+    <category term="QML/JavaScript" scheme="http://effendiian.github.io/tags/QML-JavaScript/"/>
+    
+    <category term="PHP" scheme="http://effendiian.github.io/tags/PHP/"/>
+    
+    <category term="KDE" scheme="http://effendiian.github.io/tags/KDE/"/>
+    
+    <category term="applications" scheme="http://effendiian.github.io/tags/applications/"/>
+    
+    <category term="free software" scheme="http://effendiian.github.io/tags/free-software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HFOSS - Quiz 1</title>
+    <link href="http://effendiian.github.io/2019/03/08/quiz-1/"/>
+    <id>http://effendiian.github.io/2019/03/08/quiz-1/</id>
+    <published>2019-03-08T09:20:14.000Z</published>
+    <updated>2024-07-31T02:11:49.968Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Short-Answer&quot;&gt;&lt;a href=&quot;#Short-Answer&quot; class=&quot;headerlink&quot; title=&quot;Short Answer&quot;&gt;&lt;/a&gt;Short Answer&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1) Please expand each</summary>
+        
+      
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    <category term="quiz" scheme="http://effendiian.github.io/categories/blog/hfoss/quiz/"/>
+    
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/tags/hfoss/"/>
+    
+    <category term="quiz" scheme="http://effendiian.github.io/tags/quiz/"/>
+    
+    <category term="legacy" scheme="http://effendiian.github.io/tags/legacy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Literature Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</title>
+    <link href="http://effendiian.github.io/2019/02/17/lit-review-2/"/>
+    <id>http://effendiian.github.io/2019/02/17/lit-review-2/</id>
+    <published>2019-02-17T22:16:03.000Z</published>
+    <updated>2024-07-31T02:07:02.268Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;This is the second of several literature reviews for content relevant to the humanitarian free and open source software course. In this entry, I will be reviewing &lt;em&gt;&lt;a href=&quot;https://github.com/ritjoe/hfoss/blob/master/assets/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf&quot;&gt;Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&lt;/a&gt;&lt;/em&gt; by &lt;a href=&quot;https://nadiaeghbal.com/&quot;&gt;Nadia Eghbal&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
+    
+    <category term="bugs" scheme="http://effendiian.github.io/tags/bugs/"/>
+    
+    <category term="issues" scheme="http://effendiian.github.io/tags/issues/"/>
+    
+    <category term="documentation" scheme="http://effendiian.github.io/tags/documentation/"/>
+    
+    <category term="reading" scheme="http://effendiian.github.io/tags/reading/"/>
+    
+  </entry>
+  
+</feed>
