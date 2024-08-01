@@ -5,6 +5,7 @@ categories:
  - [blog, quicklook]
 tags:
  - quicklook
+ - resource
 photos:
  - /assets/images/banners/quicklook_cover.jpg
 ---

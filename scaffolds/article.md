@@ -4,7 +4,8 @@ date: {{ date }}
 categories:
  - [article]
 tags:
- - subject
+ - $SUBJECT
+ - resource
 photos:
  - /assets/images/banners/article_cover.jpg
 ---

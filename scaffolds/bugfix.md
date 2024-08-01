@@ -6,6 +6,7 @@ categories:
 tags:
  - bugfix
  - pull request
+ - resource
 photos:
  - /assets/images/banners/bugfix_cover.jpg
 ---

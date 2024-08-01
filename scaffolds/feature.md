@@ -6,6 +6,7 @@ categories:
 tags:
  - feature
  - pull request
+ - resource
 photos:
  - /assets/images/banners/feature_cover.jpg
 ---
