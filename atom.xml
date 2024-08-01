@@ -6,7 +6,7 @@
   <link href="http://effendiian.github.io/atom.xml" rel="self"/>
   
   <link href="http://effendiian.github.io/"/>
-  <updated>2024-07-31T04:10:57.077Z</updated>
+  <updated>2024-08-01T23:41:50.876Z</updated>
   <id>http://effendiian.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Crosspost! Publishing to Dev.to From My Personal Blog</title>
+    <link href="http://effendiian.github.io/2024/08/01/cross-posting-to-devto/"/>
+    <id>http://effendiian.github.io/2024/08/01/cross-posting-to-devto/</id>
+    <published>2024-08-01T22:41:32.000Z</published>
+    <updated>2024-08-01T23:41:50.876Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Would you look at that? You’re now seeing crossposts to my &lt;a href=&quot;https://dev.to/effendiian&quot;&gt;dev.to blog&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="article" scheme="http://effendiian.github.io/categories/article/"/>
+    
+    
+    <category term="resource" scheme="http://effendiian.github.io/tags/resource/"/>
+    
+    <category term="rss" scheme="http://effendiian.github.io/tags/rss/"/>
+    
+    <category term="crosspost" scheme="http://effendiian.github.io/tags/crosspost/"/>
+    
+  </entry>
   
   <entry>
     <title>Feature: chromium-apt-get Issue 626 (PR 627)</title>
@@ -314,7 +337,7 @@
     <link href="http://effendiian.github.io/2019/04/03/quicklook-openal/"/>
     <id>http://effendiian.github.io/2019/04/03/quicklook-openal/</id>
     <published>2019-04-03T12:19:21.000Z</published>
-    <updated>2024-07-31T02:32:24.691Z</updated>
+    <updated>2024-08-01T22:17:04.722Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.openal.org/&quot;&gt;OpenAL&lt;/a&gt; is a cross-platform 3D audio API for software applications that require audio. There’s just one thing: it’s open as in &lt;em&gt;open-API&lt;/em&gt; not &lt;em&gt;open-source&lt;/em&gt;. OpenAL, like OpenGL, attempts to avoid being vendor-specific. That’s great for interoperability, but, not so great for the tenets of free software.&lt;/p&gt;</summary>
@@ -334,6 +357,8 @@
     
     <category term="quicklook" scheme="http://effendiian.github.io/tags/quicklook/"/>
     
+    <category term="resource" scheme="http://effendiian.github.io/tags/resource/"/>
+    
     <category term="audio" scheme="http://effendiian.github.io/tags/audio/"/>
     
   </entry>
@@ -343,7 +368,7 @@
     <link href="http://effendiian.github.io/2019/04/03/discourse-osculture/"/>
     <id>http://effendiian.github.io/2019/04/03/discourse-osculture/</id>
     <published>2019-04-03T10:59:19.000Z</published>
-    <updated>2024-07-31T01:53:32.940Z</updated>
+    <updated>2024-08-01T22:17:39.666Z</updated>
     
     
     <summary type="html">&lt;p&gt;There was a time when ‘open’ software wasn’t synonymous with open source and far removed from the discussions of free (as in &lt;em&gt;libre&lt;/em&gt;) software. &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_system_(computing)&quot;&gt;Open systems&lt;/a&gt; were popularized in the 1980s, when interoperability and portability between proprietary and third-party software was a rarity. &lt;a href=&quot;https://en.wikipedia.org/wiki/Open_data&quot;&gt;Open data&lt;/a&gt; pushes for the freedom to republish and use data, similar to the open source movement.&lt;/p&gt;</summary>
@@ -368,6 +393,8 @@
     <category term="culture" scheme="http://effendiian.github.io/tags/culture/"/>
     
     <category term="discourse" scheme="http://effendiian.github.io/tags/discourse/"/>
+    
+    <category term="area" scheme="http://effendiian.github.io/tags/area/"/>
     
     <category term="interoperability" scheme="http://effendiian.github.io/tags/interoperability/"/>
     
@@ -412,7 +439,7 @@
     <link href="http://effendiian.github.io/2019/04/03/quicklook-scoop/"/>
     <id>http://effendiian.github.io/2019/04/03/quicklook-scoop/</id>
     <published>2019-04-03T01:18:07.000Z</published>
-    <updated>2024-07-31T02:32:26.561Z</updated>
+    <updated>2024-08-01T21:39:16.683Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://opensource.microsoft.com/&quot;&gt;Microsoft’s releasing more open-source software&lt;/a&gt;, but, everyone knows it doesn’t matter if your distro doesn’t have a good shell.&lt;/p&gt;</summary>
@@ -431,6 +458,8 @@
     <category term="Windows" scheme="http://effendiian.github.io/tags/Windows/"/>
     
     <category term="quicklook" scheme="http://effendiian.github.io/tags/quicklook/"/>
+    
+    <category term="resource" scheme="http://effendiian.github.io/tags/resource/"/>
     
     <category term="shell" scheme="http://effendiian.github.io/tags/shell/"/>
     
@@ -484,7 +513,7 @@
     <link href="http://effendiian.github.io/2019/03/26/quicklook-sgos/"/>
     <id>http://effendiian.github.io/2019/03/26/quicklook-sgos/</id>
     <published>2019-03-26T01:59:48.000Z</published>
-    <updated>2024-07-31T02:32:21.771Z</updated>
+    <updated>2024-08-01T22:17:05.672Z</updated>
     
     
       
@@ -510,6 +539,8 @@
     <category term="RIT" scheme="http://effendiian.github.io/tags/RIT/"/>
     
     <category term="quicklook" scheme="http://effendiian.github.io/tags/quicklook/"/>
+    
+    <category term="resource" scheme="http://effendiian.github.io/tags/resource/"/>
     
     <category term="Student Government" scheme="http://effendiian.github.io/tags/Student-Government/"/>
     
@@ -560,7 +591,7 @@
     <link href="http://effendiian.github.io/2019/03/20/quicklook-sony-oss/"/>
     <id>http://effendiian.github.io/2019/03/20/quicklook-sony-oss/</id>
     <published>2019-03-20T04:46:02.000Z</published>
-    <updated>2024-07-31T02:32:18.421Z</updated>
+    <updated>2024-08-01T23:42:34.051Z</updated>
     
     
       
@@ -589,6 +620,8 @@
     <category term="imaging" scheme="http://effendiian.github.io/tags/imaging/"/>
     
     <category term="quicklook" scheme="http://effendiian.github.io/tags/quicklook/"/>
+    
+    <category term="resource" scheme="http://effendiian.github.io/tags/resource/"/>
     
   </entry>
   
@@ -761,37 +794,6 @@
     <category term="quiz" scheme="http://effendiian.github.io/tags/quiz/"/>
     
     <category term="legacy" scheme="http://effendiian.github.io/tags/legacy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Literature Review: Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure</title>
-    <link href="http://effendiian.github.io/2019/02/17/lit-review-2/"/>
-    <id>http://effendiian.github.io/2019/02/17/lit-review-2/</id>
-    <published>2019-02-17T22:16:03.000Z</published>
-    <updated>2024-07-31T02:07:02.268Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;This is the second of several literature reviews for content relevant to the humanitarian free and open source software course. In this entry, I will be reviewing &lt;em&gt;&lt;a href=&quot;https://github.com/ritjoe/hfoss/blob/master/assets/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf&quot;&gt;Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&lt;/a&gt;&lt;/em&gt; by &lt;a href=&quot;https://nadiaeghbal.com/&quot;&gt;Nadia Eghbal&lt;/a&gt;.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
-    
-    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
-    
-    
-    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
-    
-    <category term="class" scheme="http://effendiian.github.io/tags/class/"/>
-    
-    <category term="bugs" scheme="http://effendiian.github.io/tags/bugs/"/>
-    
-    <category term="issues" scheme="http://effendiian.github.io/tags/issues/"/>
-    
-    <category term="documentation" scheme="http://effendiian.github.io/tags/documentation/"/>
-    
-    <category term="reading" scheme="http://effendiian.github.io/tags/reading/"/>
     
   </entry>
   
