@@ -104,6 +104,34 @@ sitemap:
   tags: true
   categories: true
 
+# Feed
+feed:
+  # Enables or disables this plugin. Enabled by default.
+  enable: true
+  # Feed type. `atom` or `rss2`. Specify `['atom', 'rss2']` to output both types. (Default: `atom`) 
+  type: ['atom', 'rss2']              
+  # Feed path. When both types are specified, path must follow the order of type value. (Default: atom.xml/rss2.xml)  
+  path: ['atom.xml', 'rss2.xml']
+  # Maximum number of posts in the feed (Use 0 or false to show all posts)
+  limit: 20
+  # URL of the PubSubHubbub hubs (Leave it empty if you don't use it)
+  hub:
+  # (optional) set to 'true' to include the contents of the entire post in the feed.
+  content:
+  # (optional) Default length of post content used in summary. Only used, if content setting is false and no custom post description present.
+  content_limit: 140
+  # (optional) If content_limit is used to shorten post contents, only cut at the last occurrence of this delimiter before reaching the character limit. Not used by default.
+  content_limit_delim: ' '
+  # Feed order-by. (Default: -date)
+  order_by: -date
+  # (optional) Custom feed icon. Defaults to a gravatar of email specified in the main config.
+  icon: themes/cactus/source/images/favicon-192x192.png
+  # Add feed autodiscovery. (Default: true). Read about it here: https://www.rssboard.org/rss-autodiscovery
+  autodiscovery: true
+  # Custom template path(s). This file will be used to generate feed xml file, see the default templates: atom.xml and rss2.xml. 
+  template:
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
