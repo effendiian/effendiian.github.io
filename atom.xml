@@ -6,7 +6,7 @@
   <link href="http://effendiian.github.io/atom.xml" rel="self"/>
   
   <link href="http://effendiian.github.io/"/>
-  <updated>2024-08-01T23:41:50.876Z</updated>
+  <updated>2024-08-01T23:46:01.833Z</updated>
   <id>http://effendiian.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://effendiian.github.io/2024/08/01/cross-posting-to-devto/"/>
     <id>http://effendiian.github.io/2024/08/01/cross-posting-to-devto/</id>
     <published>2024-08-01T22:41:32.000Z</published>
-    <updated>2024-08-01T23:41:50.876Z</updated>
+    <updated>2024-08-01T23:46:01.833Z</updated>
     
     
     <summary type="html">&lt;p&gt;Would you look at that? You’re now seeing crossposts to my &lt;a href=&quot;https://dev.to/effendiian&quot;&gt;dev.to blog&lt;/a&gt;.&lt;/p&gt;</summary>
@@ -36,6 +36,49 @@
     <category term="rss" scheme="http://effendiian.github.io/tags/rss/"/>
     
     <category term="crosspost" scheme="http://effendiian.github.io/tags/crosspost/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Quicklook: Discovering Logseq</title>
+    <link href="http://effendiian.github.io/2024/08/01/discovering-logseq/"/>
+    <id>http://effendiian.github.io/2024/08/01/discovering-logseq/</id>
+    <published>2024-08-01T17:01:32.000Z</published>
+    <updated>2024-08-02T00:40:12.113Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://logseq.com/&quot;&gt;LogSeq&lt;/a&gt; is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Personal_knowledge_management&quot;&gt;personal knowledge management system&lt;/a&gt; application that assists those interested in working with lots of networked information.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/categories/blog/quicklook/"/>
+    
+    
+    <category term="open-source" scheme="http://effendiian.github.io/tags/open-source/"/>
+    
+    <category term="quicklook" scheme="http://effendiian.github.io/tags/quicklook/"/>
+    
+    <category term="resource" scheme="http://effendiian.github.io/tags/resource/"/>
+    
+    <category term="LogSeq" scheme="http://effendiian.github.io/tags/LogSeq/"/>
+    
+    <category term="Clojure" scheme="http://effendiian.github.io/tags/Clojure/"/>
+    
+    <category term="Datalog" scheme="http://effendiian.github.io/tags/Datalog/"/>
+    
+    <category term="DataScript" scheme="http://effendiian.github.io/tags/DataScript/"/>
+    
+    <category term="TypeScript" scheme="http://effendiian.github.io/tags/TypeScript/"/>
+    
+    <category term="OCaml" scheme="http://effendiian.github.io/tags/OCaml/"/>
+    
+    <category term="personal knowledge management system" scheme="http://effendiian.github.io/tags/personal-knowledge-management-system/"/>
+    
+    <category term="notetaking" scheme="http://effendiian.github.io/tags/notetaking/"/>
+    
+    <category term="research" scheme="http://effendiian.github.io/tags/research/"/>
     
   </entry>
   
@@ -761,39 +804,6 @@
     <category term="applications" scheme="http://effendiian.github.io/tags/applications/"/>
     
     <category term="free software" scheme="http://effendiian.github.io/tags/free-software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HFOSS - Quiz 1</title>
-    <link href="http://effendiian.github.io/2019/03/08/quiz-1/"/>
-    <id>http://effendiian.github.io/2019/03/08/quiz-1/</id>
-    <published>2019-03-08T09:20:14.000Z</published>
-    <updated>2024-07-31T02:11:49.968Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Short-Answer&quot;&gt;&lt;a href=&quot;#Short-Answer&quot; class=&quot;headerlink&quot; title=&quot;Short Answer&quot;&gt;&lt;/a&gt;Short Answer&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;1) Please expand each</summary>
-        
-      
-    
-    
-    
-    <category term="blog" scheme="http://effendiian.github.io/categories/blog/"/>
-    
-    <category term="hfoss" scheme="http://effendiian.github.io/categories/blog/hfoss/"/>
-    
-    <category term="quiz" scheme="http://effendiian.github.io/categories/blog/hfoss/quiz/"/>
-    
-    
-    <category term="hfoss" scheme="http://effendiian.github.io/tags/hfoss/"/>
-    
-    <category term="quiz" scheme="http://effendiian.github.io/tags/quiz/"/>
-    
-    <category term="legacy" scheme="http://effendiian.github.io/tags/legacy/"/>
     
   </entry>
   
